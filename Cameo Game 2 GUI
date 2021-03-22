@@ -1,0 +1,2294 @@
+-- Cameo Game 2 GUI by CanEge
+
+local number1 = math.random(1,999999)
+local number2 = math.random(1,999999)
+local ScreenGui = Instance.new("ScreenGui")
+local teleportgui = Instance.new("ImageButton")
+local playername = Instance.new("TextBox")
+local teleport = Instance.new("TextButton")
+local text = Instance.new("ImageButton")
+local UIGradient = Instance.new("UIGradient")
+local TextLabel = Instance.new("TextLabel")
+local UIGradient_2 = Instance.new("UIGradient")
+local close = Instance.new("TextButton")
+local UIGradient_3 = Instance.new("UIGradient")
+local spectategui = Instance.new("ImageButton")
+local playername_2 = Instance.new("TextBox")
+local spectate = Instance.new("TextButton")
+local text_2 = Instance.new("ImageButton")
+local UIGradient_4 = Instance.new("UIGradient")
+local TextLabel_2 = Instance.new("TextLabel")
+local UIGradient_5 = Instance.new("UIGradient")
+local close_2 = Instance.new("TextButton")
+local UIGradient_6 = Instance.new("UIGradient")
+local unspectate = Instance.new("TextButton")
+local classinfogui = Instance.new("ImageButton")
+local playername_3 = Instance.new("TextBox")
+local getinfo = Instance.new("TextButton")
+local text_3 = Instance.new("ImageButton")
+local UIGradient_7 = Instance.new("UIGradient")
+local TextLabel_3 = Instance.new("TextLabel")
+local UIGradient_8 = Instance.new("UIGradient")
+local close_3 = Instance.new("TextButton")
+local UIGradient_9 = Instance.new("UIGradient")
+local class = Instance.new("TextButton")
+local race = Instance.new("TextButton")
+local armor = Instance.new("TextButton")
+local artifact = Instance.new("TextButton")
+local kheiartifact = Instance.new("TextButton")
+local secondclass = Instance.new("TextButton")
+local silver = Instance.new("TextButton")
+local cameogame2 = Instance.new("ImageButton")
+local UIGradient_10 = Instance.new("UIGradient")
+local TextLabel_4 = Instance.new("TextLabel")
+local UIGradient_11 = Instance.new("UIGradient")
+local close_4 = Instance.new("TextButton")
+local UIGradient_12 = Instance.new("UIGradient")
+local mainFrame = Instance.new("ScrollingFrame")
+local autopickup = Instance.new("TextButton")
+local UIGradient_13 = Instance.new("UIGradient")
+local click2delete = Instance.new("TextButton")
+local UIGradient_14 = Instance.new("UIGradient")
+local Client = Instance.new("TextLabel")
+local AutoFarms = Instance.new("TextLabel")
+local shinobitrainer = Instance.new("TextButton")
+local automanacharge = Instance.new("TextButton")
+local UIGradient_15 = Instance.new("UIGradient")
+local autom1 = Instance.new("TextButton")
+local UIGradient_16 = Instance.new("UIGradient")
+local autom2 = Instance.new("TextButton")
+local UIGradient_17 = Instance.new("UIGradient")
+local Character = Instance.new("TextLabel")
+local noclip = Instance.new("TextButton")
+local UIGradient_18 = Instance.new("UIGradient")
+local infjump = Instance.new("TextButton")
+local UIGradient_19 = Instance.new("UIGradient")
+local click2teleport = Instance.new("TextButton")
+local UIGradient_20 = Instance.new("UIGradient")
+local Misc = Instance.new("TextLabel")
+local consolechatlogger = Instance.new("TextButton")
+local spectate_2 = Instance.new("TextButton")
+local followplayer = Instance.new("TextButton")
+local teleportplayer = Instance.new("TextButton")
+local getclassinfo = Instance.new("TextButton")
+local getuserinfo = Instance.new("TextButton")
+local nameprotect = Instance.new("TextButton")
+local teleportnpc = Instance.new("TextLabel")
+local monktrainer = Instance.new("TextButton")
+local dsagetrainer = Instance.new("TextButton")
+local dragonknighttrainer = Instance.new("TextButton")
+local dslayertrainer = Instance.new("TextButton")
+local akumatrainer = Instance.new("TextButton")
+local onitrainer = Instance.new("TextButton")
+local spytrainer = Instance.new("TextButton")
+local ultraspytrainer = Instance.new("TextButton")
+local inari = Instance.new("TextButton")
+local engineer = Instance.new("TextButton")
+local botanisttrainer = Instance.new("TextButton")
+local druidtrainer = Instance.new("TextButton")
+local sukari = Instance.new("TextButton")
+local william = Instance.new("TextButton")
+local blacksmithtrainer = Instance.new("TextButton")
+local cktrainer = Instance.new("TextButton")
+local deepknighttrainer = Instance.new("TextButton")
+local supersigiltrainer = Instance.new("TextButton")
+local ultrasigiltrainer = Instance.new("TextButton")
+local darksigiltrainer = Instance.new("TextButton")
+local bigswordtrainer = Instance.new("TextButton")
+local abysswalkertrainer = Instance.new("TextButton")
+local maxzoom = Instance.new("TextButton")
+local assassintrainer = Instance.new("TextButton")
+local facelesstrainer = Instance.new("TextButton")
+local Notify = Instance.new("TextLabel")
+local notifywhendropped = Instance.new("TextButton")
+local UIGradient_21 = Instance.new("UIGradient")
+local notifywhenpickedup = Instance.new("TextButton")
+local UIGradient_22 = Instance.new("UIGradient")
+local notifywhenplrleaves = Instance.new("TextButton")
+local UIGradient_23 = Instance.new("UIGradient")
+local notifywhenplrjoins = Instance.new("TextButton")
+local UIGradient_24 = Instance.new("UIGradient")
+local open = Instance.new("TextButton")
+local UIGradient_25 = Instance.new("UIGradient")
+local userinfogui = Instance.new("ImageButton")
+local playername_4 = Instance.new("TextBox")
+local getuserinfo_2 = Instance.new("TextButton")
+local text_4 = Instance.new("ImageButton")
+local UIGradient_26 = Instance.new("UIGradient")
+local TextLabel_5 = Instance.new("TextLabel")
+local UIGradient_27 = Instance.new("UIGradient")
+local close_5 = Instance.new("TextButton")
+local UIGradient_28 = Instance.new("UIGradient")
+local name = Instance.new("TextButton")
+local userid = Instance.new("TextButton")
+local accountage = Instance.new("TextButton")
+
+ScreenGui.Name = number1..number2
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
+
+teleportgui.Name = "teleportgui"
+teleportgui.Parent = ScreenGui
+teleportgui.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+teleportgui.BackgroundTransparency = 1.000
+teleportgui.BorderColor3 = Color3.fromRGB(45, 45, 45)
+teleportgui.Position = UDim2.new(0.366863906, 0, 0.241035849, 0)
+teleportgui.Size = UDim2.new(0, 397, 0, 260)
+teleportgui.Visible = false
+teleportgui.Image = "rbxassetid://2790389767"
+teleportgui.ImageColor3 = Color3.fromRGB(35, 35, 35)
+teleportgui.ScaleType = Enum.ScaleType.Slice
+teleportgui.SliceCenter = Rect.new(8, 8, 248, 248)
+
+playername.Name = "playername"
+playername.Parent = teleportgui
+playername.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+playername.BorderColor3 = Color3.fromRGB(45, 45, 45)
+playername.Position = UDim2.new(0.236775815, 0, 0.27692309, 0)
+playername.Size = UDim2.new(0, 200, 0, 50)
+playername.Font = Enum.Font.SourceSans
+playername.Text = "Player Name here"
+playername.TextColor3 = Color3.fromRGB(255, 255, 255)
+playername.TextSize = 17.000
+
+teleport.Name = "teleport"
+teleport.Parent = teleportgui
+teleport.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+teleport.BorderColor3 = Color3.fromRGB(45, 45, 45)
+teleport.Position = UDim2.new(0.236775815, 0, 0.538461566, 0)
+teleport.Size = UDim2.new(0, 200, 0, 50)
+teleport.Font = Enum.Font.SourceSans
+teleport.Text = "Teleport"
+teleport.TextColor3 = Color3.fromRGB(255, 255, 255)
+teleport.TextSize = 17.000
+
+text.Name = "text"
+text.Parent = teleportgui
+text.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+text.BackgroundTransparency = 1.000
+text.Position = UDim2.new(-0.00103837252, 0, -0.00381550193, 0)
+text.Size = UDim2.new(0, 397, 0, 22)
+text.Image = "rbxassetid://2790382281"
+text.ScaleType = Enum.ScaleType.Slice
+text.SliceCenter = Rect.new(4, 4, 252, 252)
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(12, 235, 232)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(41, 254, 198))}
+UIGradient.Parent = text
+
+TextLabel.Parent = text
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.Position = UDim2.new(0.0554156192, 0, 0.181455791, 0)
+TextLabel.Size = UDim2.new(0, 354, 0, 14)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Teleport Tool"
+TextLabel.TextColor3 = Color3.fromRGB(255, 85, 0)
+TextLabel.TextSize = 14.000
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(12, 235, 232)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(41, 254, 198))}
+UIGradient_2.Parent = TextLabel
+
+close.Name = "close"
+close.Parent = teleportgui
+close.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
+close.BorderColor3 = Color3.fromRGB(0, 255, 2554)
+close.Position = UDim2.new(0.915006578, 0, 0.0133920293, 0)
+close.Size = UDim2.new(0, 26, 0, 14)
+close.Font = Enum.Font.SourceSans
+close.Text = "-"
+close.TextColor3 = Color3.fromRGB(45, 45, 45)
+close.TextSize = 25.000
+close.TextWrapped = true
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(12, 235, 232)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(41, 254, 198))}
+UIGradient_3.Parent = close
+
+spectategui.Name = "spectategui"
+spectategui.Parent = ScreenGui
+spectategui.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+spectategui.BackgroundTransparency = 1.000
+spectategui.BorderColor3 = Color3.fromRGB(45, 45, 45)
+spectategui.Position = UDim2.new(0.366863906, 0, 0.241035849, 0)
+spectategui.Size = UDim2.new(0, 397, 0, 260)
+spectategui.Visible = false
+spectategui.Image = "rbxassetid://2790389767"
+spectategui.ImageColor3 = Color3.fromRGB(35, 35, 35)
+spectategui.ScaleType = Enum.ScaleType.Slice
+spectategui.SliceCenter = Rect.new(8, 8, 248, 248)
+
+playername_2.Name = "playername"
+playername_2.Parent = spectategui
+playername_2.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+playername_2.BorderColor3 = Color3.fromRGB(45, 45, 45)
+playername_2.Position = UDim2.new(0.236775815, 0, 0.184615403, 0)
+playername_2.Size = UDim2.new(0, 200, 0, 50)
+playername_2.Font = Enum.Font.SourceSans
+playername_2.Text = "Player name here"
+playername_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+playername_2.TextSize = 17.000
+
+spectate.Name = "spectate"
+spectate.Parent = spectategui
+spectate.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+spectate.BorderColor3 = Color3.fromRGB(45, 45, 45)
+spectate.Position = UDim2.new(0.236775815, 0, 0.469230801, 0)
+spectate.Size = UDim2.new(0, 200, 0, 50)
+spectate.Font = Enum.Font.SourceSans
+spectate.Text = "Spectate"
+spectate.TextColor3 = Color3.fromRGB(255, 255, 255)
+spectate.TextSize = 17.000
+
+text_2.Name = "text"
+text_2.Parent = spectategui
+text_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+text_2.BackgroundTransparency = 1.000
+text_2.Position = UDim2.new(-0.00103837252, 0, -0.00381550193, 0)
+text_2.Size = UDim2.new(0, 397, 0, 22)
+text_2.Image = "rbxassetid://2790382281"
+text_2.ScaleType = Enum.ScaleType.Slice
+text_2.SliceCenter = Rect.new(4, 4, 252, 252)
+
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(12, 235, 232)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(41, 254, 198))}
+UIGradient_4.Parent = text_2
+
+TextLabel_2.Parent = text_2
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.Position = UDim2.new(0.0554156192, 0, 0.181455791, 0)
+TextLabel_2.Size = UDim2.new(0, 354, 0, 14)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Spectate Tool"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 85, 0)
+TextLabel_2.TextSize = 14.000
+
+UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(12, 235, 232)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(41, 254, 198))}
+UIGradient_5.Parent = TextLabel_2
+
+close_2.Name = "close"
+close_2.Parent = spectategui
+close_2.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
+close_2.BorderColor3 = Color3.fromRGB(0, 255, 2554)
+close_2.Position = UDim2.new(0.915006578, 0, 0.0133920293, 0)
+close_2.Size = UDim2.new(0, 26, 0, 14)
+close_2.Font = Enum.Font.SourceSans
+close_2.Text = "-"
+close_2.TextColor3 = Color3.fromRGB(45, 45, 45)
+close_2.TextSize = 25.000
+close_2.TextWrapped = true
+
+UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(12, 235, 232)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(41, 254, 198))}
+UIGradient_6.Parent = close_2
+
+unspectate.Name = "unspectate"
+unspectate.Parent = spectategui
+unspectate.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+unspectate.BorderColor3 = Color3.fromRGB(45, 45, 45)
+unspectate.Position = UDim2.new(0.236775815, 0, 0.688461542, 0)
+unspectate.Size = UDim2.new(0, 200, 0, 50)
+unspectate.Font = Enum.Font.SourceSans
+unspectate.Text = "Unspectate"
+unspectate.TextColor3 = Color3.fromRGB(255, 255, 255)
+unspectate.TextSize = 17.000
+
+classinfogui.Name = "classinfogui"
+classinfogui.Parent = ScreenGui
+classinfogui.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+classinfogui.BackgroundTransparency = 1.000
+classinfogui.BorderColor3 = Color3.fromRGB(45, 45, 45)
+classinfogui.Position = UDim2.new(0.366863906, 0, 0.241035864, 0)
+classinfogui.Size = UDim2.new(0, 397, 0, 314)
+classinfogui.Visible = false
+classinfogui.Image = "rbxassetid://2790389767"
+classinfogui.ImageColor3 = Color3.fromRGB(35, 35, 35)
+classinfogui.ScaleType = Enum.ScaleType.Slice
+classinfogui.SliceCenter = Rect.new(8, 8, 248, 248)
+
+playername_3.Name = "playername"
+playername_3.Parent = classinfogui
+playername_3.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+playername_3.BorderColor3 = Color3.fromRGB(45, 45, 45)
+playername_3.Position = UDim2.new(0.0251889173, 0, 0.211538464, 0)
+playername_3.Size = UDim2.new(0, 162, 0, 28)
+playername_3.Font = Enum.Font.SourceSans
+playername_3.Text = "Player Name here"
+playername_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+playername_3.TextSize = 17.000
+
+getinfo.Name = "getinfo"
+getinfo.Parent = classinfogui
+getinfo.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+getinfo.BorderColor3 = Color3.fromRGB(45, 45, 45)
+getinfo.Position = UDim2.new(0.0251889173, 0, 0.36153847, 0)
+getinfo.Size = UDim2.new(0, 162, 0, 33)
+getinfo.Font = Enum.Font.SourceSans
+getinfo.Text = "Get Info"
+getinfo.TextColor3 = Color3.fromRGB(255, 255, 255)
+getinfo.TextSize = 17.000
+
+text_3.Name = "text"
+text_3.Parent = classinfogui
+text_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+text_3.BackgroundTransparency = 1.000
+text_3.Position = UDim2.new(-0.00103837252, 0, -0.00381550193, 0)
+text_3.Size = UDim2.new(0, 397, 0, 22)
+text_3.Image = "rbxassetid://2790382281"
+text_3.ScaleType = Enum.ScaleType.Slice
+text_3.SliceCenter = Rect.new(4, 4, 252, 252)
+
+UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(12, 235, 232)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(41, 254, 198))}
+UIGradient_7.Parent = text_3
+
+TextLabel_3.Parent = text_3
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.Position = UDim2.new(0.0554156192, 0, 0.181455791, 0)
+TextLabel_3.Size = UDim2.new(0, 354, 0, 14)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "Class Info Tool"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 85, 0)
+TextLabel_3.TextSize = 14.000
+
+UIGradient_8.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(12, 235, 232)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(41, 254, 198))}
+UIGradient_8.Parent = TextLabel_3
+
+close_3.Name = "close"
+close_3.Parent = classinfogui
+close_3.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
+close_3.BorderColor3 = Color3.fromRGB(0, 255, 2554)
+close_3.Position = UDim2.new(0.915006578, 0, 0.0133920293, 0)
+close_3.Size = UDim2.new(0, 26, 0, 14)
+close_3.Font = Enum.Font.SourceSans
+close_3.Text = "-"
+close_3.TextColor3 = Color3.fromRGB(45, 45, 45)
+close_3.TextSize = 25.000
+close_3.TextWrapped = true
+
+UIGradient_9.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(12, 235, 232)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(41, 254, 198))}
+UIGradient_9.Parent = close_3
+
+class.Name = "class"
+class.Parent = classinfogui
+class.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+class.BorderColor3 = Color3.fromRGB(45, 45, 45)
+class.Position = UDim2.new(0.57178843, 0, 0.136305749, 0)
+class.Size = UDim2.new(0, 162, 0, 23)
+class.Font = Enum.Font.SourceSans
+class.Text = "Class:"
+class.TextColor3 = Color3.fromRGB(255, 255, 255)
+class.TextSize = 13.000
+
+race.Name = "race"
+race.Parent = classinfogui
+race.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+race.BorderColor3 = Color3.fromRGB(45, 45, 45)
+race.Position = UDim2.new(0.57178843, 0, 0.246888816, 0)
+race.Size = UDim2.new(0, 162, 0, 23)
+race.Font = Enum.Font.SourceSans
+race.Text = "Race:"
+race.TextColor3 = Color3.fromRGB(255, 255, 255)
+race.TextSize = 14.000
+
+armor.Name = "armor"
+armor.Parent = classinfogui
+armor.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+armor.BorderColor3 = Color3.fromRGB(45, 45, 45)
+armor.Position = UDim2.new(0.57178843, 0, 0.360656559, 0)
+armor.Size = UDim2.new(0, 162, 0, 23)
+armor.Font = Enum.Font.SourceSans
+armor.Text = "Armor:"
+armor.TextColor3 = Color3.fromRGB(255, 255, 255)
+armor.TextSize = 14.000
+
+artifact.Name = "artifact"
+artifact.Parent = classinfogui
+artifact.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+artifact.BorderColor3 = Color3.fromRGB(45, 45, 45)
+artifact.Position = UDim2.new(0.57178843, 0, 0.46619302, 0)
+artifact.Size = UDim2.new(0, 162, 0, 23)
+artifact.Font = Enum.Font.SourceSans
+artifact.Text = "Artifact:"
+artifact.TextColor3 = Color3.fromRGB(255, 255, 255)
+artifact.TextSize = 14.000
+
+kheiartifact.Name = "kheiartifact"
+kheiartifact.Parent = classinfogui
+kheiartifact.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+kheiartifact.BorderColor3 = Color3.fromRGB(45, 45, 45)
+kheiartifact.Position = UDim2.new(0.57178843, 0, 0.571288586, 0)
+kheiartifact.Size = UDim2.new(0, 162, 0, 23)
+kheiartifact.Font = Enum.Font.SourceSans
+kheiartifact.Text = "Khei Artifact:"
+kheiartifact.TextColor3 = Color3.fromRGB(255, 255, 255)
+kheiartifact.TextSize = 14.000
+
+secondclass.Name = "secondclass"
+secondclass.Parent = classinfogui
+secondclass.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+secondclass.BorderColor3 = Color3.fromRGB(45, 45, 45)
+secondclass.Position = UDim2.new(0.57178843, 0, 0.676384151, 0)
+secondclass.Size = UDim2.new(0, 162, 0, 23)
+secondclass.Font = Enum.Font.SourceSans
+secondclass.Text = "Second Class:"
+secondclass.TextColor3 = Color3.fromRGB(255, 255, 255)
+secondclass.TextSize = 14.000
+
+silver.Name = "silver"
+silver.Parent = classinfogui
+silver.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+silver.BorderColor3 = Color3.fromRGB(45, 45, 45)
+silver.Position = UDim2.new(0.57178843, 0, 0.784664392, 0)
+silver.Size = UDim2.new(0, 162, 0, 23)
+silver.Font = Enum.Font.SourceSans
+silver.Text = "Silver:"
+silver.TextColor3 = Color3.fromRGB(255, 255, 255)
+silver.TextSize = 14.000
+
+cameogame2.Name = "cameogame2"
+cameogame2.Parent = ScreenGui
+cameogame2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+cameogame2.Position = UDim2.new(0.309664696, 0, 0.163346618, 0)
+cameogame2.Size = UDim2.new(0, 493, 0, 332)
+cameogame2.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+UIGradient_10.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(12, 235, 232)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(41, 254, 198))}
+UIGradient_10.Parent = cameogame2
+
+TextLabel_4.Parent = cameogame2
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.Position = UDim2.new(-0.000384256244, 0, -1.83284283e-06, 0)
+TextLabel_4.Size = UDim2.new(0, 493, 0, 20)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "CanEge's Cameo Game 2 GUI"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 85, 0)
+TextLabel_4.TextSize = 17.000
+
+UIGradient_11.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(12, 235, 232)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(41, 254, 198))}
+UIGradient_11.Parent = TextLabel_4
+
+close_4.Name = "close"
+close_4.Parent = cameogame2
+close_4.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
+close_4.BorderColor3 = Color3.fromRGB(0, 255, 2554)
+close_4.Position = UDim2.new(0.945233285, 0, 0.0210843366, 0)
+close_4.Size = UDim2.new(0, 26, 0, 14)
+close_4.Font = Enum.Font.SourceSans
+close_4.Text = "-"
+close_4.TextColor3 = Color3.fromRGB(45, 45, 45)
+close_4.TextSize = 25.000
+close_4.TextWrapped = true
+
+UIGradient_12.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(12, 235, 232)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(41, 254, 198))}
+UIGradient_12.Parent = close_4
+
+mainFrame.Name = "mainFrame"
+mainFrame.Parent = cameogame2
+mainFrame.Active = true
+mainFrame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+mainFrame.BorderColor3 = Color3.fromRGB(45, 45, 45)
+mainFrame.Position = UDim2.new(0, 0, 0.0588218048, 0)
+mainFrame.Size = UDim2.new(0, 493, 0, 312)
+mainFrame.CanvasSize = UDim2.new(0, 0, 7, 0)
+mainFrame.VerticalScrollBarPosition = Enum.VerticalScrollBarPosition.Left
+
+autopickup.Name = "autopickup"
+autopickup.Parent = mainFrame
+autopickup.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+autopickup.BorderColor3 = Color3.fromRGB(45, 45, 45)
+autopickup.Position = UDim2.new(0.0486815423, 0, 0.201143757, 0)
+autopickup.Size = UDim2.new(0, 200, 0, 34)
+autopickup.Font = Enum.Font.SourceSans
+autopickup.Text = "Auto PickUp [OFF]"
+autopickup.TextColor3 = Color3.fromRGB(255, 255, 255)
+autopickup.TextSize = 14.000
+autopickup.TextStrokeColor3 = Color3.fromRGB(45, 45, 45)
+
+UIGradient_13.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(12, 235, 232)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(41, 254, 198))}
+UIGradient_13.Parent = autopickup
+
+click2delete.Name = "click2delete"
+click2delete.Parent = mainFrame
+click2delete.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+click2delete.BorderColor3 = Color3.fromRGB(45, 45, 45)
+click2delete.Position = UDim2.new(0.0486815423, 0, 0.0288011096, 0)
+click2delete.Size = UDim2.new(0, 200, 0, 34)
+click2delete.Font = Enum.Font.SourceSans
+click2delete.Text = "Click to delete [OFF]"
+click2delete.TextColor3 = Color3.fromRGB(255, 255, 255)
+click2delete.TextSize = 14.000
+click2delete.TextStrokeColor3 = Color3.fromRGB(45, 45, 45)
+
+UIGradient_14.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(12, 235, 232)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(41, 254, 198))}
+UIGradient_14.Parent = click2delete
+
+Client.Name = "Client"
+Client.Parent = mainFrame
+Client.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Client.BorderColor3 = Color3.fromRGB(45, 45, 45)
+Client.Position = UDim2.new(0.247464508, 0, 0.011844961, 0)
+Client.Size = UDim2.new(0, 233, 0, 19)
+Client.Font = Enum.Font.SourceSans
+Client.Text = "Client"
+Client.TextColor3 = Color3.fromRGB(255, 255, 255)
+Client.TextSize = 15.000
+Client.TextStrokeColor3 = Color3.fromRGB(45, 45, 45)
+
+AutoFarms.Name = "AutoFarms"
+AutoFarms.Parent = mainFrame
+AutoFarms.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+AutoFarms.BorderColor3 = Color3.fromRGB(45, 45, 45)
+AutoFarms.Position = UDim2.new(0.261663288, 0, 0.168994755, 0)
+AutoFarms.Size = UDim2.new(0, 233, 0, 19)
+AutoFarms.Font = Enum.Font.SourceSans
+AutoFarms.Text = "Auto"
+AutoFarms.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoFarms.TextSize = 15.000
+AutoFarms.TextStrokeColor3 = Color3.fromRGB(45, 45, 45)
+
+shinobitrainer.Name = "shinobitrainer"
+shinobitrainer.Parent = mainFrame
+shinobitrainer.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+shinobitrainer.BorderColor3 = Color3.fromRGB(45, 45, 45)
+shinobitrainer.Position = UDim2.new(0.0486815572, 0, 0.819264054, 0)
+shinobitrainer.Size = UDim2.new(0, 200, 0, 34)
+shinobitrainer.Font = Enum.Font.SourceSans
+shinobitrainer.Text = "Shinobi Trainer"
+shinobitrainer.TextColor3 = Color3.fromRGB(255, 255, 255)
+shinobitrainer.TextSize = 14.000
+shinobitrainer.TextStrokeColor3 = Color3.fromRGB(45, 45, 45)
+
+automanacharge.Name = "automanacharge"
+automanacharge.Parent = mainFrame
+automanacharge.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+automanacharge.BorderColor3 = Color3.fromRGB(45, 45, 45)
+automanacharge.Position = UDim2.new(0.539553761, 0, 0.200872302, 0)
+automanacharge.Size = UDim2.new(0, 200, 0, 34)
+automanacharge.Font = Enum.Font.SourceSans
+automanacharge.Text = "Auto Mana Charge [OFF]"
+automanacharge.TextColor3 = Color3.fromRGB(255, 255, 255)
+automanacharge.TextSize = 14.000
+automanacharge.TextStrokeColor3 = Color3.fromRGB(45, 45, 45)
+
+UIGradient_15.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(12, 235, 232)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(41, 254, 198))}
+UIGradient_15.Parent = automanacharge
+
+autom1.Name = "autom1"
+autom1.Parent = mainFrame
+autom1.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+autom1.BorderColor3 = Color3.fromRGB(45, 45, 45)
+autom1.Position = UDim2.new(0.0486815423, 0, 0.228097081, 0)
+autom1.Size = UDim2.new(0, 200, 0, 34)
+autom1.Font = Enum.Font.SourceSans
+autom1.Text = "Auto M1 [OFF]"
+autom1.TextColor3 = Color3.fromRGB(255, 255, 255)
+autom1.TextSize = 14.000
+autom1.TextStrokeColor3 = Color3.fromRGB(45, 45, 45)
+
+UIGradient_16.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(12, 235, 232)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(41, 254, 198))}
+UIGradient_16.Parent = autom1
+
+autom2.Name = "autom2"
+autom2.Parent = mainFrame
+autom2.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+autom2.BorderColor3 = Color3.fromRGB(45, 45, 45)
+autom2.Position = UDim2.new(0.539553761, 0, 0.227666795, 0)
+autom2.Size = UDim2.new(0, 200, 0, 34)
+autom2.Font = Enum.Font.SourceSans
+autom2.Text = "Auto M2 [OFF]"
+autom2.TextColor3 = Color3.fromRGB(255, 255, 255)
+autom2.TextSize = 14.000
+autom2.TextStrokeColor3 = Color3.fromRGB(45, 45, 45)
+
+UIGradient_17.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(12, 235, 232)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(41, 254, 198))}
+UIGradient_17.Parent = autom2
+
+Character.Name = "Character"
+Character.Parent = mainFrame
+Character.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Character.BorderColor3 = Color3.fromRGB(45, 45, 45)
+Character.Position = UDim2.new(0.263691694, 0, 0.0700004026, 0)
+Character.Size = UDim2.new(0, 233, 0, 19)
+Character.Font = Enum.Font.SourceSans
+Character.Text = "Character"
+Character.TextColor3 = Color3.fromRGB(255, 255, 255)
+Character.TextSize = 15.000
+Character.TextStrokeColor3 = Color3.fromRGB(45, 45, 45)
+
+noclip.Name = "noclip"
+noclip.Parent = mainFrame
+noclip.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+noclip.BorderColor3 = Color3.fromRGB(45, 45, 45)
+noclip.Position = UDim2.new(0.0486815348, 0, 0.0965032429, 0)
+noclip.Size = UDim2.new(0, 200, 0, 34)
+noclip.Font = Enum.Font.SourceSans
+noclip.Text = "No Clip [OFF]"
+noclip.TextColor3 = Color3.fromRGB(255, 255, 255)
+noclip.TextSize = 14.000
+noclip.TextStrokeColor3 = Color3.fromRGB(45, 45, 45)
+
+UIGradient_18.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(12, 235, 232)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(41, 254, 198))}
+UIGradient_18.Parent = noclip
+
+infjump.Name = "infjump"
+infjump.Parent = mainFrame
+infjump.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+infjump.BorderColor3 = Color3.fromRGB(45, 45, 45)
+infjump.Position = UDim2.new(0.539553761, 0, 0.0962318182, 0)
+infjump.Size = UDim2.new(0, 200, 0, 34)
+infjump.Font = Enum.Font.SourceSans
+infjump.Text = "Infinite Jump [OFF]"
+infjump.TextColor3 = Color3.fromRGB(255, 255, 255)
+infjump.TextSize = 14.000
+infjump.TextStrokeColor3 = Color3.fromRGB(45, 45, 45)
+
+UIGradient_19.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(12, 235, 232)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(41, 254, 198))}
+UIGradient_19.Parent = infjump
+
+click2teleport.Name = "click2teleport"
+click2teleport.Parent = mainFrame
+click2teleport.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+click2teleport.BorderColor3 = Color3.fromRGB(45, 45, 45)
+click2teleport.Position = UDim2.new(0.0486815348, 0, 0.124158368, 0)
+click2teleport.Size = UDim2.new(0, 200, 0, 34)
+click2teleport.Font = Enum.Font.SourceSans
+click2teleport.Text = "Click to teleport [OFF]"
+click2teleport.TextColor3 = Color3.fromRGB(255, 255, 255)
+click2teleport.TextSize = 14.000
+click2teleport.TextStrokeColor3 = Color3.fromRGB(45, 45, 45)
+
+UIGradient_20.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(12, 235, 232)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(41, 254, 198))}
+UIGradient_20.Parent = click2teleport
+
+Misc.Name = "Misc"
+Misc.Parent = mainFrame
+Misc.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Misc.BorderColor3 = Color3.fromRGB(45, 45, 45)
+Misc.Position = UDim2.new(0.261663288, 0, 0.290044785, 0)
+Misc.Size = UDim2.new(0, 233, 0, 19)
+Misc.Font = Enum.Font.SourceSans
+Misc.Text = "Misc"
+Misc.TextColor3 = Color3.fromRGB(255, 255, 255)
+Misc.TextSize = 15.000
+Misc.TextStrokeColor3 = Color3.fromRGB(45, 45, 45)
+
+consolechatlogger.Name = "consolechatlogger"
+consolechatlogger.Parent = mainFrame
+consolechatlogger.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+consolechatlogger.BorderColor3 = Color3.fromRGB(45, 45, 45)
+consolechatlogger.Position = UDim2.new(0.0486815423, 0, 0.31777826, 0)
+consolechatlogger.Size = UDim2.new(0, 200, 0, 34)
+consolechatlogger.Font = Enum.Font.SourceSans
+consolechatlogger.Text = "Console ChatLogger"
+consolechatlogger.TextColor3 = Color3.fromRGB(255, 255, 255)
+consolechatlogger.TextSize = 14.000
+consolechatlogger.TextStrokeColor3 = Color3.fromRGB(45, 45, 45)
+
+spectate_2.Name = "spectate"
+spectate_2.Parent = mainFrame
+spectate_2.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+spectate_2.BorderColor3 = Color3.fromRGB(45, 45, 45)
+spectate_2.Position = UDim2.new(0.539553761, 0, 0.31777826, 0)
+spectate_2.Size = UDim2.new(0, 200, 0, 34)
+spectate_2.Font = Enum.Font.SourceSans
+spectate_2.Text = "Spectate Player"
+spectate_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+spectate_2.TextSize = 14.000
+spectate_2.TextStrokeColor3 = Color3.fromRGB(45, 45, 45)
+
+followplayer.Name = "followplayer"
+followplayer.Parent = mainFrame
+followplayer.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+followplayer.BorderColor3 = Color3.fromRGB(45, 45, 45)
+followplayer.Position = UDim2.new(0.0486815423, 0, 0.34861967, 0)
+followplayer.Size = UDim2.new(0, 200, 0, 34)
+followplayer.Font = Enum.Font.SourceSans
+followplayer.Text = "Follow Player [T]"
+followplayer.TextColor3 = Color3.fromRGB(255, 255, 255)
+followplayer.TextSize = 14.000
+followplayer.TextStrokeColor3 = Color3.fromRGB(45, 45, 45)
+
+teleportplayer.Name = "teleportplayer"
+teleportplayer.Parent = mainFrame
+teleportplayer.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+teleportplayer.BorderColor3 = Color3.fromRGB(45, 45, 45)
+teleportplayer.Position = UDim2.new(0.539553761, 0, 0.348588824, 0)
+teleportplayer.Size = UDim2.new(0, 200, 0, 34)
+teleportplayer.Font = Enum.Font.SourceSans
+teleportplayer.Text = "Teleport Player"
+teleportplayer.TextColor3 = Color3.fromRGB(255, 255, 255)
+teleportplayer.TextSize = 14.000
+teleportplayer.TextStrokeColor3 = Color3.fromRGB(45, 45, 45)
+
+getclassinfo.Name = "getclassinfo"
+getclassinfo.Parent = mainFrame
+getclassinfo.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+getclassinfo.BorderColor3 = Color3.fromRGB(45, 45, 45)
+getclassinfo.Position = UDim2.new(0.0486815423, 0, 0.379390031, 0)
+getclassinfo.Size = UDim2.new(0, 200, 0, 34)
+getclassinfo.Font = Enum.Font.SourceSans
+getclassinfo.Text = "Get Player's Class Info"
+getclassinfo.TextColor3 = Color3.fromRGB(255, 255, 255)
+getclassinfo.TextSize = 14.000
+getclassinfo.TextStrokeColor3 = Color3.fromRGB(45, 45, 45)
+
+getuserinfo.Name = "getuserinfo"
+getuserinfo.Parent = mainFrame
+getuserinfo.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+getuserinfo.BorderColor3 = Color3.fromRGB(45, 45, 45)
+getuserinfo.Position = UDim2.new(0.539553761, 0, 0.382402062, 0)
+getuserinfo.Size = UDim2.new(0, 200, 0, 34)
+getuserinfo.Font = Enum.Font.SourceSans
+getuserinfo.Text = "Get Player's User Info"
+getuserinfo.TextColor3 = Color3.fromRGB(255, 255, 255)
+getuserinfo.TextSize = 14.000
+getuserinfo.TextStrokeColor3 = Color3.fromRGB(45, 45, 45)
+
+nameprotect.Name = "nameprotect"
+nameprotect.Parent = mainFrame
+nameprotect.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+nameprotect.BorderColor3 = Color3.fromRGB(45, 45, 45)
+nameprotect.Position = UDim2.new(0.0486815423, 0, 0.411486804, 0)
+nameprotect.Size = UDim2.new(0, 200, 0, 34)
+nameprotect.Font = Enum.Font.SourceSans
+nameprotect.Text = "Name Protect"
+nameprotect.TextColor3 = Color3.fromRGB(255, 255, 255)
+nameprotect.TextSize = 14.000
+nameprotect.TextStrokeColor3 = Color3.fromRGB(45, 45, 45)
+
+teleportnpc.Name = "teleportnpc"
+teleportnpc.Parent = mainFrame
+teleportnpc.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+teleportnpc.BorderColor3 = Color3.fromRGB(45, 45, 45)
+teleportnpc.Position = UDim2.new(0.247464508, 0, 0.475433171, 0)
+teleportnpc.Size = UDim2.new(0, 233, 0, 19)
+teleportnpc.Font = Enum.Font.SourceSans
+teleportnpc.Text = "Teleport NPC"
+teleportnpc.TextColor3 = Color3.fromRGB(255, 255, 255)
+teleportnpc.TextSize = 15.000
+teleportnpc.TextStrokeColor3 = Color3.fromRGB(45, 45, 45)
+
+monktrainer.Name = "monktrainer"
+monktrainer.Parent = mainFrame
+monktrainer.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+monktrainer.BorderColor3 = Color3.fromRGB(45, 45, 45)
+monktrainer.Position = UDim2.new(0.0486815348, 0, 0.506781876, 0)
+monktrainer.Size = UDim2.new(0, 200, 0, 34)
+monktrainer.Font = Enum.Font.SourceSans
+monktrainer.Text = "Monk Trainer"
+monktrainer.TextColor3 = Color3.fromRGB(255, 255, 255)
+monktrainer.TextSize = 14.000
+monktrainer.TextStrokeColor3 = Color3.fromRGB(45, 45, 45)
+
+dsagetrainer.Name = "dsagetrainer"
+dsagetrainer.Parent = mainFrame
+dsagetrainer.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+dsagetrainer.BorderColor3 = Color3.fromRGB(45, 45, 45)
+dsagetrainer.Position = UDim2.new(0.539553761, 0, 0.507099628, 0)
+dsagetrainer.Size = UDim2.new(0, 200, 0, 34)
+dsagetrainer.Font = Enum.Font.SourceSans
+dsagetrainer.Text = "DSage Trainer"
+dsagetrainer.TextColor3 = Color3.fromRGB(255, 255, 255)
+dsagetrainer.TextSize = 14.000
+dsagetrainer.TextStrokeColor3 = Color3.fromRGB(45, 45, 45)
+
+dragonknighttrainer.Name = "dragonknighttrainer"
+dragonknighttrainer.Parent = mainFrame
+dragonknighttrainer.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+dragonknighttrainer.BorderColor3 = Color3.fromRGB(45, 45, 45)
+dragonknighttrainer.Position = UDim2.new(0.0486815348, 0, 0.536184371, 0)
+dragonknighttrainer.Size = UDim2.new(0, 200, 0, 34)
+dragonknighttrainer.Font = Enum.Font.SourceSans
+dragonknighttrainer.Text = "Dragon Knight Trainer"
+dragonknighttrainer.TextColor3 = Color3.fromRGB(255, 255, 255)
+dragonknighttrainer.TextSize = 14.000
+dragonknighttrainer.TextStrokeColor3 = Color3.fromRGB(45, 45, 45)
+
+dslayertrainer.Name = "dslayertrainer"
+dslayertrainer.Parent = mainFrame
+dslayertrainer.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+dslayertrainer.BorderColor3 = Color3.fromRGB(45, 45, 45)
+dslayertrainer.Position = UDim2.new(0.539553761, 0, 0.536184371, 0)
+dslayertrainer.Size = UDim2.new(0, 200, 0, 34)
+dslayertrainer.Font = Enum.Font.SourceSans
+dslayertrainer.Text = "DSlayer Trainer"
+dslayertrainer.TextColor3 = Color3.fromRGB(255, 255, 255)
+dslayertrainer.TextSize = 14.000
+dslayertrainer.TextStrokeColor3 = Color3.fromRGB(45, 45, 45)
+
+akumatrainer.Name = "akumatrainer"
+akumatrainer.Parent = mainFrame
+akumatrainer.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+akumatrainer.BorderColor3 = Color3.fromRGB(45, 45, 45)
+akumatrainer.Position = UDim2.new(0.0486815348, 0, 0.565996945, 0)
+akumatrainer.Size = UDim2.new(0, 200, 0, 34)
+akumatrainer.Font = Enum.Font.SourceSans
+akumatrainer.Text = "Akuma Trainer"
+akumatrainer.TextColor3 = Color3.fromRGB(255, 255, 255)
+akumatrainer.TextSize = 14.000
+akumatrainer.TextStrokeColor3 = Color3.fromRGB(45, 45, 45)
+
+onitrainer.Name = "onitrainer"
+onitrainer.Parent = mainFrame
+onitrainer.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+onitrainer.BorderColor3 = Color3.fromRGB(45, 45, 45)
+onitrainer.Position = UDim2.new(0.539553761, 0, 0.565996945, 0)
+onitrainer.Size = UDim2.new(0, 200, 0, 34)
+onitrainer.Font = Enum.Font.SourceSans
+onitrainer.Text = "Oni Trainer"
+onitrainer.TextColor3 = Color3.fromRGB(255, 255, 255)
+onitrainer.TextSize = 14.000
+onitrainer.TextStrokeColor3 = Color3.fromRGB(45, 45, 45)
+
+spytrainer.Name = "spytrainer"
+spytrainer.Parent = mainFrame
+spytrainer.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+spytrainer.BorderColor3 = Color3.fromRGB(45, 45, 45)
+spytrainer.Position = UDim2.new(0.0486815348, 0, 0.591506541, 0)
+spytrainer.Size = UDim2.new(0, 200, 0, 34)
+spytrainer.Font = Enum.Font.SourceSans
+spytrainer.Text = "Spy Trainer"
+spytrainer.TextColor3 = Color3.fromRGB(255, 255, 255)
+spytrainer.TextSize = 14.000
+spytrainer.TextStrokeColor3 = Color3.fromRGB(45, 45, 45)
+
+ultraspytrainer.Name = "ultraspytrainer"
+ultraspytrainer.Parent = mainFrame
+ultraspytrainer.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+ultraspytrainer.BorderColor3 = Color3.fromRGB(45, 45, 45)
+ultraspytrainer.Position = UDim2.new(0.539553761, 0, 0.591506541, 0)
+ultraspytrainer.Size = UDim2.new(0, 200, 0, 34)
+ultraspytrainer.Font = Enum.Font.SourceSans
+ultraspytrainer.Text = "Ultra Spy Trainer"
+ultraspytrainer.TextColor3 = Color3.fromRGB(255, 255, 255)
+ultraspytrainer.TextSize = 14.000
+ultraspytrainer.TextStrokeColor3 = Color3.fromRGB(45, 45, 45)
+
+inari.Name = "inari"
+inari.Parent = mainFrame
+inari.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+inari.BorderColor3 = Color3.fromRGB(45, 45, 45)
+inari.Position = UDim2.new(0.0486815348, 0, 0.643935382, 0)
+inari.Size = UDim2.new(0, 200, 0, 34)
+inari.Font = Enum.Font.SourceSans
+inari.Text = "Inari [Scroll Gatcha]"
+inari.TextColor3 = Color3.fromRGB(255, 255, 255)
+inari.TextSize = 14.000
+inari.TextStrokeColor3 = Color3.fromRGB(45, 45, 45)
+
+engineer.Name = "engineer"
+engineer.Parent = mainFrame
+engineer.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+engineer.BorderColor3 = Color3.fromRGB(45, 45, 45)
+engineer.Position = UDim2.new(0.539553761, 0, 0.643664002, 0)
+engineer.Size = UDim2.new(0, 200, 0, 34)
+engineer.Font = Enum.Font.SourceSans
+engineer.Text = "Engineer"
+engineer.TextColor3 = Color3.fromRGB(255, 255, 255)
+engineer.TextSize = 14.000
+engineer.TextStrokeColor3 = Color3.fromRGB(45, 45, 45)
+
+botanisttrainer.Name = "botanisttrainer"
+botanisttrainer.Parent = mainFrame
+botanisttrainer.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+botanisttrainer.BorderColor3 = Color3.fromRGB(45, 45, 45)
+botanisttrainer.Position = UDim2.new(0.0486815348, 0, 0.618783712, 0)
+botanisttrainer.Size = UDim2.new(0, 200, 0, 34)
+botanisttrainer.Font = Enum.Font.SourceSans
+botanisttrainer.Text = "Botanist Trainer"
+botanisttrainer.TextColor3 = Color3.fromRGB(255, 255, 255)
+botanisttrainer.TextSize = 14.000
+botanisttrainer.TextStrokeColor3 = Color3.fromRGB(45, 45, 45)
+
+druidtrainer.Name = "druidtrainer"
+druidtrainer.Parent = mainFrame
+druidtrainer.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+druidtrainer.BorderColor3 = Color3.fromRGB(45, 45, 45)
+druidtrainer.Position = UDim2.new(0.539553761, 0, 0.618783712, 0)
+druidtrainer.Size = UDim2.new(0, 200, 0, 34)
+druidtrainer.Font = Enum.Font.SourceSans
+druidtrainer.Text = "Druid Trainer"
+druidtrainer.TextColor3 = Color3.fromRGB(255, 255, 255)
+druidtrainer.TextSize = 14.000
+druidtrainer.TextStrokeColor3 = Color3.fromRGB(45, 45, 45)
+
+sukari.Name = "sukari"
+sukari.Parent = mainFrame
+sukari.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+sukari.BorderColor3 = Color3.fromRGB(45, 45, 45)
+sukari.Position = UDim2.new(0.0486815348, 0, 0.672390759, 0)
+sukari.Size = UDim2.new(0, 200, 0, 34)
+sukari.Font = Enum.Font.SourceSans
+sukari.Text = "Sukari [House Create]"
+sukari.TextColor3 = Color3.fromRGB(255, 255, 255)
+sukari.TextSize = 14.000
+sukari.TextStrokeColor3 = Color3.fromRGB(45, 45, 45)
+
+william.Name = "william"
+william.Parent = mainFrame
+william.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+william.BorderColor3 = Color3.fromRGB(45, 45, 45)
+william.Position = UDim2.new(0.539553761, 0, 0.672390759, 0)
+william.Size = UDim2.new(0, 200, 0, 34)
+william.Font = Enum.Font.SourceSans
+william.Text = "William [Collector]"
+william.TextColor3 = Color3.fromRGB(255, 255, 255)
+william.TextSize = 14.000
+william.TextStrokeColor3 = Color3.fromRGB(45, 45, 45)
+
+blacksmithtrainer.Name = "blacksmithtrainer"
+blacksmithtrainer.Parent = mainFrame
+blacksmithtrainer.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+blacksmithtrainer.BorderColor3 = Color3.fromRGB(45, 45, 45)
+blacksmithtrainer.Position = UDim2.new(0.0486815572, 0, 0.728871167, 0)
+blacksmithtrainer.Size = UDim2.new(0, 200, 0, 34)
+blacksmithtrainer.Font = Enum.Font.SourceSans
+blacksmithtrainer.Text = "Blacksmith Trainer"
+blacksmithtrainer.TextColor3 = Color3.fromRGB(255, 255, 255)
+blacksmithtrainer.TextSize = 14.000
+blacksmithtrainer.TextStrokeColor3 = Color3.fromRGB(45, 45, 45)
+
+cktrainer.Name = "cktrainer"
+cktrainer.Parent = mainFrame
+cktrainer.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+cktrainer.BorderColor3 = Color3.fromRGB(45, 45, 45)
+cktrainer.Position = UDim2.new(0.0486815497, 0, 0.700938702, 0)
+cktrainer.Size = UDim2.new(0, 200, 0, 34)
+cktrainer.Font = Enum.Font.SourceSans
+cktrainer.Text = "Church Knight Trainer"
+cktrainer.TextColor3 = Color3.fromRGB(255, 255, 255)
+cktrainer.TextSize = 14.000
+cktrainer.TextStrokeColor3 = Color3.fromRGB(45, 45, 45)
+
+deepknighttrainer.Name = "deepknighttrainer"
+deepknighttrainer.Parent = mainFrame
+deepknighttrainer.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+deepknighttrainer.BorderColor3 = Color3.fromRGB(45, 45, 45)
+deepknighttrainer.Position = UDim2.new(0.539553761, 0, 0.700938702, 0)
+deepknighttrainer.Size = UDim2.new(0, 200, 0, 34)
+deepknighttrainer.Font = Enum.Font.SourceSans
+deepknighttrainer.Text = "DeepKnight Trainer"
+deepknighttrainer.TextColor3 = Color3.fromRGB(255, 255, 255)
+deepknighttrainer.TextSize = 14.000
+deepknighttrainer.TextStrokeColor3 = Color3.fromRGB(45, 45, 45)
+
+supersigiltrainer.Name = "supersigiltrainer"
+supersigiltrainer.Parent = mainFrame
+supersigiltrainer.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+supersigiltrainer.BorderColor3 = Color3.fromRGB(45, 45, 45)
+supersigiltrainer.Position = UDim2.new(0.539553761, 0, 0.72844094, 0)
+supersigiltrainer.Size = UDim2.new(0, 200, 0, 34)
+supersigiltrainer.Font = Enum.Font.SourceSans
+supersigiltrainer.Text = "Super Sigil Trainer"
+supersigiltrainer.TextColor3 = Color3.fromRGB(255, 255, 255)
+supersigiltrainer.TextSize = 14.000
+supersigiltrainer.TextStrokeColor3 = Color3.fromRGB(45, 45, 45)
+
+ultrasigiltrainer.Name = "ultrasigiltrainer"
+ultrasigiltrainer.Parent = mainFrame
+ultrasigiltrainer.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+ultrasigiltrainer.BorderColor3 = Color3.fromRGB(45, 45, 45)
+ultrasigiltrainer.Position = UDim2.new(0.0486815572, 0, 0.758545101, 0)
+ultrasigiltrainer.Size = UDim2.new(0, 200, 0, 34)
+ultrasigiltrainer.Font = Enum.Font.SourceSans
+ultrasigiltrainer.Text = "Ultra Sigil Trainer"
+ultrasigiltrainer.TextColor3 = Color3.fromRGB(255, 255, 255)
+ultrasigiltrainer.TextSize = 14.000
+ultrasigiltrainer.TextStrokeColor3 = Color3.fromRGB(45, 45, 45)
+
+darksigiltrainer.Name = "darksigiltrainer"
+darksigiltrainer.Parent = mainFrame
+darksigiltrainer.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+darksigiltrainer.BorderColor3 = Color3.fromRGB(45, 45, 45)
+darksigiltrainer.Position = UDim2.new(0.539553761, 0, 0.758975387, 0)
+darksigiltrainer.Size = UDim2.new(0, 200, 0, 34)
+darksigiltrainer.Font = Enum.Font.SourceSans
+darksigiltrainer.Text = "Dark Sigil Trainer"
+darksigiltrainer.TextColor3 = Color3.fromRGB(255, 255, 255)
+darksigiltrainer.TextSize = 14.000
+darksigiltrainer.TextStrokeColor3 = Color3.fromRGB(45, 45, 45)
+
+bigswordtrainer.Name = "bigswordtrainer"
+bigswordtrainer.Parent = mainFrame
+bigswordtrainer.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+bigswordtrainer.BorderColor3 = Color3.fromRGB(45, 45, 45)
+bigswordtrainer.Position = UDim2.new(0.0486815572, 0, 0.789232314, 0)
+bigswordtrainer.Size = UDim2.new(0, 200, 0, 34)
+bigswordtrainer.Font = Enum.Font.SourceSans
+bigswordtrainer.Text = "Big Sword Trainer"
+bigswordtrainer.TextColor3 = Color3.fromRGB(255, 255, 255)
+bigswordtrainer.TextSize = 14.000
+bigswordtrainer.TextStrokeColor3 = Color3.fromRGB(45, 45, 45)
+
+abysswalkertrainer.Name = "abysswalkertrainer"
+abysswalkertrainer.Parent = mainFrame
+abysswalkertrainer.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+abysswalkertrainer.BorderColor3 = Color3.fromRGB(45, 45, 45)
+abysswalkertrainer.Position = UDim2.new(0.539553761, 0, 0.789232314, 0)
+abysswalkertrainer.Size = UDim2.new(0, 200, 0, 34)
+abysswalkertrainer.Font = Enum.Font.SourceSans
+abysswalkertrainer.Text = "Abyss Walker Trainer"
+abysswalkertrainer.TextColor3 = Color3.fromRGB(255, 255, 255)
+abysswalkertrainer.TextSize = 14.000
+abysswalkertrainer.TextStrokeColor3 = Color3.fromRGB(45, 45, 45)
+
+maxzoom.Name = "maxzoom"
+maxzoom.Parent = mainFrame
+maxzoom.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+maxzoom.BorderColor3 = Color3.fromRGB(45, 45, 45)
+maxzoom.Position = UDim2.new(0.539553761, 0, 0.411231667, 0)
+maxzoom.Size = UDim2.new(0, 200, 0, 34)
+maxzoom.Font = Enum.Font.SourceSans
+maxzoom.Text = "Max Camera Zoom"
+maxzoom.TextColor3 = Color3.fromRGB(255, 255, 255)
+maxzoom.TextSize = 14.000
+maxzoom.TextStrokeColor3 = Color3.fromRGB(45, 45, 45)
+
+assassintrainer.Name = "assassintrainer"
+assassintrainer.Parent = mainFrame
+assassintrainer.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+assassintrainer.BorderColor3 = Color3.fromRGB(45, 45, 45)
+assassintrainer.Position = UDim2.new(0.539553761, 0, 0.818833768, 0)
+assassintrainer.Size = UDim2.new(0, 200, 0, 34)
+assassintrainer.Font = Enum.Font.SourceSans
+assassintrainer.Text = "Assassin Trainer"
+assassintrainer.TextColor3 = Color3.fromRGB(255, 255, 255)
+assassintrainer.TextSize = 14.000
+assassintrainer.TextStrokeColor3 = Color3.fromRGB(45, 45, 45)
+
+facelesstrainer.Name = "facelesstrainer"
+facelesstrainer.Parent = mainFrame
+facelesstrainer.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+facelesstrainer.BorderColor3 = Color3.fromRGB(45, 45, 45)
+facelesstrainer.Position = UDim2.new(0.0486815572, 0, 0.851679385, 0)
+facelesstrainer.Size = UDim2.new(0, 200, 0, 34)
+facelesstrainer.Font = Enum.Font.SourceSans
+facelesstrainer.Text = "Faceless Trainer"
+facelesstrainer.TextColor3 = Color3.fromRGB(255, 255, 255)
+facelesstrainer.TextSize = 14.000
+facelesstrainer.TextStrokeColor3 = Color3.fromRGB(45, 45, 45)
+
+Notify.Name = "Notify"
+Notify.Parent = mainFrame
+Notify.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Notify.BorderColor3 = Color3.fromRGB(45, 45, 45)
+Notify.Position = UDim2.new(0.247464508, 0, 0.89597249, 0)
+Notify.Size = UDim2.new(0, 233, 0, 19)
+Notify.Font = Enum.Font.SourceSans
+Notify.Text = "Notify"
+Notify.TextColor3 = Color3.fromRGB(255, 255, 255)
+Notify.TextSize = 15.000
+Notify.TextStrokeColor3 = Color3.fromRGB(45, 45, 45)
+
+notifywhendropped.Name = "notifywhendropped"
+notifywhendropped.Parent = mainFrame
+notifywhendropped.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+notifywhendropped.BorderColor3 = Color3.fromRGB(45, 45, 45)
+notifywhendropped.Position = UDim2.new(0.0486815572, 0, 0.951076984, 0)
+notifywhendropped.Size = UDim2.new(0, 200, 0, 34)
+notifywhendropped.Font = Enum.Font.SourceSans
+notifywhendropped.Text = "Notify me when when something was dropped  [OFF]"
+notifywhendropped.TextColor3 = Color3.fromRGB(255, 255, 255)
+notifywhendropped.TextScaled = true
+notifywhendropped.TextSize = 9.000
+notifywhendropped.TextStrokeColor3 = Color3.fromRGB(45, 45, 45)
+notifywhendropped.TextWrapped = true
+
+UIGradient_21.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(12, 235, 232)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(41, 254, 198))}
+UIGradient_21.Parent = notifywhendropped
+
+notifywhenpickedup.Name = "notifywhenpickedup"
+notifywhenpickedup.Parent = mainFrame
+notifywhenpickedup.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+notifywhenpickedup.BorderColor3 = Color3.fromRGB(45, 45, 45)
+notifywhenpickedup.Position = UDim2.new(0.539553761, 0, 0.951076984, 0)
+notifywhenpickedup.Size = UDim2.new(0, 200, 0, 34)
+notifywhenpickedup.Font = Enum.Font.SourceSans
+notifywhenpickedup.Text = "Notify me when something picked up [OFF]"
+notifywhenpickedup.TextColor3 = Color3.fromRGB(255, 255, 255)
+notifywhenpickedup.TextScaled = true
+notifywhenpickedup.TextSize = 9.000
+notifywhenpickedup.TextStrokeColor3 = Color3.fromRGB(45, 45, 45)
+notifywhenpickedup.TextWrapped = true
+
+UIGradient_22.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(12, 235, 232)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(41, 254, 198))}
+UIGradient_22.Parent = notifywhenpickedup
+
+notifywhenplrleaves.Name = "notifywhenplrleaves"
+notifywhenplrleaves.Parent = mainFrame
+notifywhenplrleaves.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+notifywhenplrleaves.BorderColor3 = Color3.fromRGB(45, 45, 45)
+notifywhenplrleaves.Position = UDim2.new(0.539553761, 0, 0.925259411, 0)
+notifywhenplrleaves.Size = UDim2.new(0, 200, 0, 34)
+notifywhenplrleaves.Font = Enum.Font.SourceSans
+notifywhenplrleaves.Text = "Notify me when player leaves [OFF]"
+notifywhenplrleaves.TextColor3 = Color3.fromRGB(255, 255, 255)
+notifywhenplrleaves.TextSize = 14.000
+notifywhenplrleaves.TextStrokeColor3 = Color3.fromRGB(45, 45, 45)
+
+UIGradient_23.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(12, 235, 232)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(41, 254, 198))}
+UIGradient_23.Parent = notifywhenplrleaves
+
+notifywhenplrjoins.Name = "notifywhenplrjoins"
+notifywhenplrjoins.Parent = mainFrame
+notifywhenplrjoins.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+notifywhenplrjoins.BorderColor3 = Color3.fromRGB(45, 45, 45)
+notifywhenplrjoins.Position = UDim2.new(0.0486815572, 0, 0.925259411, 0)
+notifywhenplrjoins.Size = UDim2.new(0, 200, 0, 34)
+notifywhenplrjoins.Font = Enum.Font.SourceSans
+notifywhenplrjoins.Text = "Notify me when player joins [OFF]"
+notifywhenplrjoins.TextColor3 = Color3.fromRGB(255, 255, 255)
+notifywhenplrjoins.TextSize = 14.000
+notifywhenplrjoins.TextStrokeColor3 = Color3.fromRGB(45, 45, 45)
+
+UIGradient_24.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(12, 235, 232)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(41, 254, 198))}
+UIGradient_24.Parent = notifywhenplrjoins
+
+open.Name = "open"
+open.Parent = cameogame2
+open.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
+open.BorderColor3 = Color3.fromRGB(0, 255, 2554)
+open.Position = UDim2.new(0.945233285, 0, 0.00602409802, 0)
+open.Size = UDim2.new(0, 26, 0, 14)
+open.Visible = false
+open.Font = Enum.Font.SourceSans
+open.Text = "+"
+open.TextColor3 = Color3.fromRGB(45, 45, 45)
+open.TextSize = 25.000
+open.TextWrapped = true
+
+UIGradient_25.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(12, 235, 232)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(41, 254, 198))}
+UIGradient_25.Parent = open
+
+userinfogui.Name = "userinfogui"
+userinfogui.Parent = ScreenGui
+userinfogui.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+userinfogui.BackgroundTransparency = 1.000
+userinfogui.BorderColor3 = Color3.fromRGB(45, 45, 45)
+userinfogui.Position = UDim2.new(0.366863906, 0, 0.241035864, 0)
+userinfogui.Size = UDim2.new(0, 397, 0, 241)
+userinfogui.Visible = false
+userinfogui.Image = "rbxassetid://2790389767"
+userinfogui.ImageColor3 = Color3.fromRGB(35, 35, 35)
+userinfogui.ScaleType = Enum.ScaleType.Slice
+userinfogui.SliceCenter = Rect.new(8, 8, 248, 248)
+
+playername_4.Name = "playername"
+playername_4.Parent = userinfogui
+playername_4.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+playername_4.BorderColor3 = Color3.fromRGB(45, 45, 45)
+playername_4.Position = UDim2.new(0.0251889173, 0, 0.211538479, 0)
+playername_4.Size = UDim2.new(0, 162, 0, 35)
+playername_4.Font = Enum.Font.SourceSans
+playername_4.Text = "Player name here"
+playername_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+playername_4.TextSize = 17.000
+
+getuserinfo_2.Name = "getuserinfo"
+getuserinfo_2.Parent = userinfogui
+getuserinfo_2.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+getuserinfo_2.BorderColor3 = Color3.fromRGB(45, 45, 45)
+getuserinfo_2.Position = UDim2.new(0.0251889173, 0, 0.427928507, 0)
+getuserinfo_2.Size = UDim2.new(0, 162, 0, 43)
+getuserinfo_2.Font = Enum.Font.SourceSans
+getuserinfo_2.Text = "Get Info"
+getuserinfo_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+getuserinfo_2.TextSize = 17.000
+
+text_4.Name = "text"
+text_4.Parent = userinfogui
+text_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+text_4.BackgroundTransparency = 1.000
+text_4.Position = UDim2.new(-0.00103837252, 0, -0.00381550193, 0)
+text_4.Size = UDim2.new(0, 397, 0, 22)
+text_4.Image = "rbxassetid://2790382281"
+text_4.ScaleType = Enum.ScaleType.Slice
+text_4.SliceCenter = Rect.new(4, 4, 252, 252)
+
+UIGradient_26.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(12, 235, 232)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(41, 254, 198))}
+UIGradient_26.Parent = text_4
+
+TextLabel_5.Parent = text_4
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.Position = UDim2.new(0.0554156192, 0, 0.181455791, 0)
+TextLabel_5.Size = UDim2.new(0, 354, 0, 14)
+TextLabel_5.Font = Enum.Font.SourceSans
+TextLabel_5.Text = "User Info Tool"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 85, 0)
+TextLabel_5.TextSize = 14.000
+
+UIGradient_27.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(12, 235, 232)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(41, 254, 198))}
+UIGradient_27.Parent = TextLabel_5
+
+close_5.Name = "close"
+close_5.Parent = userinfogui
+close_5.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
+close_5.BorderColor3 = Color3.fromRGB(0, 255, 2554)
+close_5.Position = UDim2.new(0.915006578, 0, 0.0133920293, 0)
+close_5.Size = UDim2.new(0, 26, 0, 14)
+close_5.Font = Enum.Font.SourceSans
+close_5.Text = "-"
+close_5.TextColor3 = Color3.fromRGB(45, 45, 45)
+close_5.TextSize = 25.000
+close_5.TextWrapped = true
+
+UIGradient_28.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(12, 235, 232)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(41, 254, 198))}
+UIGradient_28.Parent = close_5
+
+name.Name = "name"
+name.Parent = userinfogui
+name.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+name.BorderColor3 = Color3.fromRGB(45, 45, 45)
+name.Position = UDim2.new(0.57178843, 0, 0.210994542, 0)
+name.Size = UDim2.new(0, 162, 0, 23)
+name.Font = Enum.Font.SourceSans
+name.Text = "Name:"
+name.TextColor3 = Color3.fromRGB(255, 255, 255)
+name.TextSize = 13.000
+
+userid.Name = "userid"
+userid.Parent = userinfogui
+userid.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+userid.BorderColor3 = Color3.fromRGB(45, 45, 45)
+userid.Position = UDim2.new(0.57178843, 0, 0.354772627, 0)
+userid.Size = UDim2.new(0, 162, 0, 23)
+userid.Font = Enum.Font.SourceSans
+userid.Text = "UserId:"
+userid.TextColor3 = Color3.fromRGB(255, 255, 255)
+userid.TextSize = 14.000
+
+accountage.Name = "accountage"
+accountage.Parent = userinfogui
+accountage.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+accountage.BorderColor3 = Color3.fromRGB(45, 45, 45)
+accountage.Position = UDim2.new(0.57178843, 0, 0.510034144, 0)
+accountage.Size = UDim2.new(0, 162, 0, 23)
+accountage.Font = Enum.Font.SourceSans
+accountage.Text = "Account Age:"
+accountage.TextColor3 = Color3.fromRGB(255, 255, 255)
+accountage.TextSize = 14.000
+
+-- Scripts:
+
+local function KBDX_fake_script() -- ScreenGui.nprotect 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	local number1 = math.random(1,999999)
+	local number2 = math.random(1,999999)
+	
+	script.Parent.Name = number1..number2
+end
+coroutine.wrap(KBDX_fake_script)()
+local function BJPHIT_fake_script() -- teleport.LocalScript 
+	local script = Instance.new('LocalScript', teleport)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for i,v in pairs (game.Players:GetPlayers())do
+			if script.Parent.Parent.playername.Text == v.Name and script.Parent.Parent.playername.Text ~= game.Players.LocalPlayer.Name then
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame
+			end
+		end
+	end)
+end
+coroutine.wrap(BJPHIT_fake_script)()
+local function JYPJUVR_fake_script() -- teleportgui.LocalScript 
+	local script = Instance.new('LocalScript', teleportgui)
+
+	script.Parent.Draggable = true
+end
+coroutine.wrap(JYPJUVR_fake_script)()
+local function IUKZMP_fake_script() -- close.LocalScript 
+	local script = Instance.new('LocalScript', close)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(IUKZMP_fake_script)()
+local function RUQXN_fake_script() -- spectate.LocalScript 
+	local script = Instance.new('LocalScript', spectate)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for i,v in pairs (game.Players:GetPlayers())do
+			if script.Parent.Parent.playername.Text == v.Name then
+				game.Workspace.Camera.CameraSubject = v.Character
+			end
+		end
+	end)
+end
+coroutine.wrap(RUQXN_fake_script)()
+local function XAPHCC_fake_script() -- spectategui.LocalScript 
+	local script = Instance.new('LocalScript', spectategui)
+
+	script.Parent.Draggable = true
+end
+coroutine.wrap(XAPHCC_fake_script)()
+local function IBHIHA_fake_script() -- close_2.LocalScript 
+	local script = Instance.new('LocalScript', close_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(IBHIHA_fake_script)()
+local function TQGTNFS_fake_script() -- unspectate.LocalScript 
+	local script = Instance.new('LocalScript', unspectate)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Workspace.Camera.CameraSubject = game.Players.LocalPlayer.Character
+	end)
+end
+coroutine.wrap(TQGTNFS_fake_script)()
+local function IIFDX_fake_script() -- getinfo.LocalScript 
+	local script = Instance.new('LocalScript', getinfo)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for i,v in pairs(game.Players:GetPlayers())do
+			if script.Parent.Parent.playername.Text == v.Name then
+				script.Parent.Parent.class.Text = "Class: "..v:FindFirstChild("Data").Class.Value
+				script.Parent.Parent.race.Text = "Race: "..v:FindFirstChild("Data").Race.Value
+				script.Parent.Parent.armor.Text = "Armor: "..v:FindFirstChild("Data").Armor.Value
+				script.Parent.Parent.artifact.Text = "Artifact: "..v:FindFirstChild("Data").ArtifactSlot.Value
+				script.Parent.Parent.kheiartifact.Text = "Khei Artifact: "..v:FindFirstChild("Data").KheiArtifact.Value
+				script.Parent.Parent.secondclass.Text = "Second Class: "..v:FindFirstChild("Data").Class2.Value
+				script.Parent.Parent.silver.Text = "Silver: "..v:FindFirstChild("Data").Silver.Value
+			end
+		end
+	end)
+end
+coroutine.wrap(IIFDX_fake_script)()
+local function TCMQQ_fake_script() -- classinfogui.LocalScript 
+	local script = Instance.new('LocalScript', classinfogui)
+
+	script.Parent.Draggable = true
+end
+coroutine.wrap(TCMQQ_fake_script)()
+local function ONQP_fake_script() -- close_3.LocalScript 
+	local script = Instance.new('LocalScript', close_3)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(ONQP_fake_script)()
+local function YMWSOK_fake_script() -- close_4.LocalScript 
+	local script = Instance.new('LocalScript', close_4)
+
+	local TweenService = game:GetService("TweenService")
+	local frame = script.Parent.Parent.mainFrame
+	local frame2 = script.Parent.Parent
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		frame:TweenSize(
+			UDim2.new(0, 493,0, 0),
+			"Out",
+			"Linear",
+			2,
+			false
+		)
+		
+		frame2:TweenSize(
+			UDim2.new(0, 493,0, 0),
+			"Out",
+			"Linear",
+			2,
+			false
+		)
+		
+		wait(2)
+		script.Parent.Visible = false
+		script.Parent.Parent.mainFrame.Visible = false
+		script.Parent.Parent.open.Visible = true
+		
+	end)
+	
+end
+coroutine.wrap(YMWSOK_fake_script)()
+local function FZZTL_fake_script() -- autopickup.LocalScript 
+	local script = Instance.new('LocalScript', autopickup)
+
+	_G.autopickup = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if _G.autopickup == false then
+			_G.autopickup = true
+			script.Parent.Text = "Auto PickUp [ON]"
+		else
+			_G.autopickup = false
+			script.Parent.Text = "Auto PickUp [OFF]"
+		end
+	end)
+	
+	game:GetService("RunService").RenderStepped:Connect(function()
+		if _G.autopickup then
+			for i,v in pairs(game.Workspace:GetChildren())do
+				if v:IsA("BackpackItem") and v:FindFirstChild("Handle") then
+					game.Players.LocalPlayer.Character.Humanoid:EquipTool(v)
+				end
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(FZZTL_fake_script)()
+local function PILZNJ_fake_script() -- click2delete.LocalScript 
+	local script = Instance.new('LocalScript', click2delete)
+
+	local player = game.Players.LocalPlayer
+	local mouse = player:GetMouse()
+	_G.click2delete = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if _G.click2delete == false then
+			_G.click2delete = true
+			script.Parent.Text = "Click to delete [ON]"
+		else
+			_G.click2delete = false
+			script.Parent.Text = "Click to delete [OFF]"
+		end
+	end)
+	
+	mouse.Button1Down:Connect(function()
+		if _G.click2delete then
+			if not mouse.Target.Parent:FindFirstChild("Humanoid") then
+				mouse.Target:Destroy()
+			end
+		end
+	end)
+	
+		
+end
+coroutine.wrap(PILZNJ_fake_script)()
+local function WIDR_fake_script() -- shinobitrainer.LocalScript 
+	local script = Instance.new('LocalScript', shinobitrainer)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(729.646, -220.954, 1040.47)
+	end)
+end
+coroutine.wrap(WIDR_fake_script)()
+local function GXNYXD_fake_script() -- automanacharge.LocalScript 
+	local script = Instance.new('LocalScript', automanacharge)
+
+	_G.automanacharge = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if _G.automanacharge == false then
+			_G.automanacharge = true
+			script.Parent.Text = "Auto Mana Charge [ON]"
+		else
+			_G.automanacharge = false
+			script.Parent.Text = "Auto Mana Charge [OFF]"
+		end
+	end)
+	
+	while wait()do
+		if _G.automanacharge then
+			game.Players.LocalPlayer.Character:FindFirstChild("ManaChargeStart"):FireServer()
+		end
+	end
+end
+coroutine.wrap(GXNYXD_fake_script)()
+local function DVRCMZD_fake_script() -- autom1.LocalScript 
+	local script = Instance.new('LocalScript', autom1)
+
+	_G.autom1 = false
+	script.Parent.MouseButton1Click:Connect(function()
+		if _G.autom1 == false then
+			_G.autom1 = true
+			script.Parent.Text = "Auto M1 [ON]"
+		else
+			_G.autom1 = false
+			script.Parent.Text = "Auto M2 [OFF]"
+		end	
+	end)
+	
+	while wait()do
+		if _G.autom1 then
+			game.Players.LocalPlayer.Character:FindFirstChild("M1"):FireServer()
+		end
+	end
+end
+coroutine.wrap(DVRCMZD_fake_script)()
+local function UVDUN_fake_script() -- autom2.LocalScript 
+	local script = Instance.new('LocalScript', autom2)
+
+	_G.autom2 = false
+	script.Parent.MouseButton1Click:Connect(function()
+		if _G.autom2 == false then
+			_G.autom2 = true
+			script.Parent.Text = "Auto M2 [ON]"
+		else
+			_G.autom2 = false
+			script.Parent.Text = "Auto M2 [OFF]"
+		end	
+	end)
+	
+	while wait()do
+		if _G.autom2 then
+			game.Players.LocalPlayer.Character:FindFirstChild("M2"):FireServer()
+		end
+	end
+end
+coroutine.wrap(UVDUN_fake_script)()
+local function ANPL_fake_script() -- noclip.LocalScript 
+	local script = Instance.new('LocalScript', noclip)
+
+	_G.noclip = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if _G.noclip == false then
+			_G.noclip = true
+			script.Parent.Text = "No Clip [ON]"
+		else
+			_G.noclip = false
+			script.Parent.Text = "No Clip [OFF]"
+		end
+	end)
+	
+	while wait()do
+		if _G.noclip then
+			game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+		end
+	end
+end
+coroutine.wrap(ANPL_fake_script)()
+local function HGDA_fake_script() -- infjump.LocalScript 
+	local script = Instance.new('LocalScript', infjump)
+
+	local UserInputService = game:GetService("UserInputService")
+	_G.infjump = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if _G.infjump == false then
+			_G.infjump = true
+			script.Parent.Text = "Infinite Jump [ON]"
+		else
+			_G.infjump = false
+			script.Parent.Text = "Infinite Jump [OFF]"
+		end
+	end)
+	
+	UserInputService.JumpRequest:Connect(function()
+		if _G.infjump then
+			game.Players.LocalPlayer.Character.Humanoid:ChangeState("Jumping")
+		end
+	end)
+	
+end
+coroutine.wrap(HGDA_fake_script)()
+local function VBZEBZ_fake_script() -- click2teleport.LocalScript 
+	local script = Instance.new('LocalScript', click2teleport)
+
+	local player = game.Players.LocalPlayer
+	local mouse = player:GetMouse()
+	_G.click2teleport = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if _G.click2teleport == false then
+			_G.click2teleport = true
+			script.Parent.Text = "Click to teleport [ON]"
+		else
+			_G.click2teleport = false
+			script.Parent.Text = "Click to teleport [OFF]"
+		end
+	end)
+	
+	mouse.Button1Down:Connect(function()
+		if _G.click2teleport then
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(mouse.Target.Position)
+		end
+	end)
+	
+		
+end
+coroutine.wrap(VBZEBZ_fake_script)()
+local function YSUHEI_fake_script() -- consolechatlogger.LocalScript 
+	local script = Instance.new('LocalScript', consolechatlogger)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local Chat = game:GetService("Chat")
+		rconsolename("CanEge's ChatLogger")
+	
+		for i,v in pairs(game.Players:GetPlayers())do
+			v.Chatted:Connect(function(msg)
+				rconsoleinfo("["..v.Name.."] "..msg)
+			end)
+		end
+	
+		game.Players.PlayerAdded:Connect(function(player)
+			rconsolewarn(player.Name.." joined the game!")
+			player.Chatted:Connect(function(msg)
+				rconsoleinfo("["..player.Name.."] "..msg)
+			end)
+		end)
+	
+		game.Players.PlayerRemoving:Connect(function(player)
+			rconsolewarn(player.Name.." left the game!")
+		end)
+	end)
+end
+coroutine.wrap(YSUHEI_fake_script)()
+local function NRCJC_fake_script() -- spectate_2.LocalScript 
+	local script = Instance.new('LocalScript', spectate_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.spectategui.Visible = true
+	end)
+end
+coroutine.wrap(NRCJC_fake_script)()
+local function JCJGY_fake_script() -- followplayer.LocalScript 
+	local script = Instance.new('LocalScript', followplayer)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		-- Follow Player by CanEge
+		local UserInputService = game:GetService("UserInputService")
+		local player = game.Players.LocalPlayer
+		local mouse = player:GetMouse()
+		_G.typing = false
+		_G.resetonspawn = false -- make it true if u want a remove ur target when you respawn/die
+		_G.target = ""
+	
+		UserInputService.InputBegan:Connect(function(input, gameProccesedEvent)
+			if input.KeyCode == Enum.KeyCode.T then -- You can change the keybind
+				if _G.typing == false then
+					if mouse.Target.Parent:FindFirstChild("Humanoid") then
+						for i,v in pairs(game.Players:GetPlayers())do
+							if mouse.Target.Parent.Name == v.Name and mouse.Target.Parent.Name ~= game.Players.LocalPlayer.Name then
+								if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - v.Character.HumanoidRootPart.Position).Magnitude <= 100 then
+									_G.target = v
+								end
+							end
+						end
+					else
+						_G.target = ""
+					end
+				end
+			end
+		end)
+	
+		game:GetService("RunService").RenderStepped:Connect(function()
+			if _G.target ~= "" then
+				for i,v in pairs(game.Players:GetPlayers())do
+					if _G.target.Name == v.Name and _G.target.Name ~= game.Players.LocalPlayer.Name then
+						game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame * CFrame.new(0,5,0)
+					end
+				end
+			end
+		end)
+	
+		UserInputService.TextBoxFocused:Connect(function(textbox)
+			if textbox.Name == "ChatBar" then
+				if _G.typing == false then
+					_G.typing = true
+				end
+			end
+		end)
+	
+		UserInputService.TextBoxFocusReleased:Connect(function(textbox)
+			if textbox.Name == "ChatBar" then
+				if _G.typing then
+					_G.typing = false
+				end
+			end
+		end)
+	
+		game.Players.LocalPlayer.CharacterAdded:Connect(function()
+			if _G.resetonspawn then
+				_G.target = ""
+			end
+		end)
+	end)
+end
+coroutine.wrap(JCJGY_fake_script)()
+local function TDKPUZ_fake_script() -- teleportplayer.LocalScript 
+	local script = Instance.new('LocalScript', teleportplayer)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.teleportgui.Visible = true
+	end)
+end
+coroutine.wrap(TDKPUZ_fake_script)()
+local function GJRXVV_fake_script() -- getclassinfo.LocalScript 
+	local script = Instance.new('LocalScript', getclassinfo)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.classinfogui.Visible = true
+	end)
+end
+coroutine.wrap(GJRXVV_fake_script)()
+local function WMGMNFH_fake_script() -- getuserinfo.LocalScript 
+	local script = Instance.new('LocalScript', getuserinfo)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.userinfogui.Visible = true
+	end)
+end
+coroutine.wrap(WMGMNFH_fake_script)()
+local function PNDEFNP_fake_script() -- nameprotect.LocalScript 
+	local script = Instance.new('LocalScript', nameprotect)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		-- Name Protect by CanEge
+		_G.nprotectmethod = ""
+		local words = {
+			"a",
+			"b",
+			"c",
+			"d",
+			"e",
+			"f",
+			"g",
+			"h",
+			"I",
+			"i",
+			"j",
+			"k",
+			"l",
+			"m",
+			"n",
+			"o",
+			"p",
+			"q",
+			"r",
+			"s",
+			"t",
+			"u",
+			"v",
+			"y",
+			"z",
+			"x",
+			"A",
+			"B",
+			"C",
+			"D",
+			"E",
+			"F",
+			"G",
+			"H",
+			"J",
+			"K",
+			"L",
+			"M",
+			"N",
+			"O",
+			"P",
+			"Q",
+			"R",
+			"S",
+			"T",
+			"U",
+			"V",
+			"Y",
+			"Z",
+			"X",
+			"xd",
+			"XD",
+			"Im",
+			"IM",
+			"you",
+			"You",
+			"best",
+			"Best",
+			"pro",
+			"Pro",
+			"rogue",
+			"Rogue",
+			"dc",
+			"lineage",
+			"Lineage",
+			"selam",
+			"duck",
+			"Duck",
+			"3d",
+			"2d",
+			"1d",
+			"boy",
+			"Boy",
+			"no",
+			"druid",
+			"hey",
+			"Hey",
+			"love",
+			"Love",
+			"find",
+			"Find",
+			"yes",
+			"hoppa",
+			"noob",
+			"Noob",
+			"yo",
+			"Yo",
+			"TR",
+			"name",
+			"Name",
+			"ah",
+			"Ah",
+			"player",
+			"Player",
+			"robot",
+			"Robot",
+			"roblox",
+			"Roblox",
+			"gaian",
+			"Gaian",
+			"the",
+			"The",
+			"xxx",
+			"Xxx",
+			"nope",
+			"melon",
+			"Melon",
+			"arch",
+			"Arch",
+			"rag",
+			"Rag",
+			"ice",
+			"Ice",
+			"fire",
+			"Fire",
+			"wiki",
+			"Wiki",
+			"tab",
+			"member",
+			"Member",
+			"mage",
+			"Mage",
+			"end",
+			"End",
+			"orange",
+			"Orange",
+			"white",
+			"White",
+			"black",
+			"Black",
+			"purple",
+			"Purple",
+			"blue",
+			"Blue",
+			"hey",
+			"Hey",
+			"yea",
+			"_",
+			"dragon",
+			"0",
+			"1",
+			"2",
+			"3",
+			"4",
+			"5",
+			"6",
+			"7",
+			"8",
+			"9",
+			"10"
+		}
+	
+		for i,v in pairs(game.Players:GetPlayers())do
+			v.Name = words[math.random(1,150)]..words[math.random(1,150)]..words[math.random(1,150)]..words[math.random(1,150)]
+			_G.nprotectmethod = "nprotect"
+		end
+	
+		game.Players.PlayerAdded:Connect(function(player)
+			if _G.nprotectmethod == "nprotect" then
+				player.Name = words[math.random(1,150)]..words[math.random(1,150)]..words[math.random(1,150)]..words[math.random(1,150)]
+			end
+		end)
+	end)
+end
+coroutine.wrap(PNDEFNP_fake_script)()
+local function CPXGEP_fake_script() -- monktrainer.LocalScript 
+	local script = Instance.new('LocalScript', monktrainer)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1036.76, 76.9561, 1708.15)
+	end)
+end
+coroutine.wrap(CPXGEP_fake_script)()
+local function DXLTGVK_fake_script() -- dsagetrainer.LocalScript 
+	local script = Instance.new('LocalScript', dsagetrainer)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-212.604, 1360.5, -5082)
+	end)
+end
+coroutine.wrap(DXLTGVK_fake_script)()
+local function QRXBT_fake_script() -- dragonknighttrainer.LocalScript 
+	local script = Instance.new('LocalScript', dragonknighttrainer)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4222.14, 267.5, -981.546)
+	end)
+end
+coroutine.wrap(QRXBT_fake_script)()
+local function CBKTBND_fake_script() -- dslayertrainer.LocalScript 
+	local script = Instance.new('LocalScript', dslayertrainer)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-51.1635, 440.19, -708.656)
+	end)
+end
+coroutine.wrap(CBKTBND_fake_script)()
+local function LAEBE_fake_script() -- akumatrainer.LocalScript 
+	local script = Instance.new('LocalScript', akumatrainer)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1227.05, 180.776, 2997.77)
+	end)
+end
+coroutine.wrap(LAEBE_fake_script)()
+local function XUWC_fake_script() -- onitrainer.LocalScript 
+	local script = Instance.new('LocalScript', onitrainer)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2600.87, 1021.5, -7555.8)
+	end)
+end
+coroutine.wrap(XUWC_fake_script)()
+local function PHZX_fake_script() -- spytrainer.LocalScript 
+	local script = Instance.new('LocalScript', spytrainer)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1463.34, 108.5, 3057)
+	end)
+end
+coroutine.wrap(PHZX_fake_script)()
+local function NXSS_fake_script() -- ultraspytrainer.LocalScript 
+	local script = Instance.new('LocalScript', ultraspytrainer)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2629.55, 998.5, -6463.03)
+	end)
+end
+coroutine.wrap(NXSS_fake_script)()
+local function WXOYOD_fake_script() -- inari.LocalScript 
+	local script = Instance.new('LocalScript', inari)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-191.087, 2966.49, 592.675)
+	end)
+end
+coroutine.wrap(WXOYOD_fake_script)()
+local function QNEUNM_fake_script() -- engineer.LocalScript 
+	local script = Instance.new('LocalScript', engineer)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-33.7334, 5.5, 1682.34)
+	end)
+end
+coroutine.wrap(QNEUNM_fake_script)()
+local function AWPBW_fake_script() -- botanisttrainer.LocalScript 
+	local script = Instance.new('LocalScript', botanisttrainer)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-581.575, 813.5, -5079.6)
+	end)
+end
+coroutine.wrap(AWPBW_fake_script)()
+local function DWPH_fake_script() -- druidtrainer.LocalScript 
+	local script = Instance.new('LocalScript', druidtrainer)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3109.46, 1338.5, -5472.31)
+	end)
+end
+coroutine.wrap(DWPH_fake_script)()
+local function LUMC_fake_script() -- sukari.LocalScript 
+	local script = Instance.new('LocalScript', sukari)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(797.786, -139.5, 796.934)
+	end)
+end
+coroutine.wrap(LUMC_fake_script)()
+local function POGC_fake_script() -- william.LocalScript 
+	local script = Instance.new('LocalScript', william)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(533.688, -231.5, 905.447)
+	end)
+end
+coroutine.wrap(POGC_fake_script)()
+local function QUQYWJ_fake_script() -- blacksmithtrainer.LocalScript 
+	local script = Instance.new('LocalScript', blacksmithtrainer)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2164.66, -827.975, -5513.15)
+	end)
+end
+coroutine.wrap(QUQYWJ_fake_script)()
+local function JDQTNDW_fake_script() -- cktrainer.LocalScript 
+	local script = Instance.new('LocalScript', cktrainer)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-102.146, 728.11, -4944.08)
+	end)
+end
+coroutine.wrap(JDQTNDW_fake_script)()
+local function ENPSFB_fake_script() -- deepknighttrainer.LocalScript 
+	local script = Instance.new('LocalScript', deepknighttrainer)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3787.2, 644.69, -5176.85)
+	end)
+end
+coroutine.wrap(ENPSFB_fake_script)()
+local function UOVUSLG_fake_script() -- supersigiltrainer.LocalScript 
+	local script = Instance.new('LocalScript', supersigiltrainer)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2499.29, 457.935, -63.7668)
+	end)
+end
+coroutine.wrap(UOVUSLG_fake_script)()
+local function UTEOFGJ_fake_script() -- ultrasigiltrainer.LocalScript 
+	local script = Instance.new('LocalScript', ultrasigiltrainer)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-405.464, 188.19, -7830.16)
+	end)
+end
+coroutine.wrap(UTEOFGJ_fake_script)()
+local function NAMRRBV_fake_script() -- darksigiltrainer.LocalScript 
+	local script = Instance.new('LocalScript', darksigiltrainer)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(668.04, -304.3, 953.88)
+	end)
+end
+coroutine.wrap(NAMRRBV_fake_script)()
+local function YFBA_fake_script() -- bigswordtrainer.LocalScript 
+	local script = Instance.new('LocalScript', bigswordtrainer)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(736.13, 83.5, 2009.85)
+	end)
+end
+coroutine.wrap(YFBA_fake_script)()
+local function VZUDI_fake_script() -- abysswalkertrainer.LocalScript 
+	local script = Instance.new('LocalScript', abysswalkertrainer)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(371.502, 63.5, -5279.21)
+	end)
+end
+coroutine.wrap(VZUDI_fake_script)()
+local function XIDMN_fake_script() -- maxzoom.LocalScript 
+	local script = Instance.new('LocalScript', maxzoom)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.CameraMaxZoomDistance = math.huge
+		
+		game.Players.LocalPlayer.CharacterAdded:Connect(function()
+			game.Players.LocalPlayer.CameraMaxZoomDistance = math.huge
+		end)
+	end)
+end
+coroutine.wrap(XIDMN_fake_script)()
+local function BPQAZOU_fake_script() -- assassintrainer.LocalScript 
+	local script = Instance.new('LocalScript', assassintrainer)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-909.163, -37.06, -1141.16)
+	end)
+end
+coroutine.wrap(BPQAZOU_fake_script)()
+local function UBTPP_fake_script() -- facelesstrainer.LocalScript 
+	local script = Instance.new('LocalScript', facelesstrainer)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1931.16, -230.31, -5420.16)
+	end)
+end
+coroutine.wrap(UBTPP_fake_script)()
+local function SGUC_fake_script() -- notifywhendropped.LocalScript 
+	local script = Instance.new('LocalScript', notifywhendropped)
+
+	_G.notifydropped = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if _G.notifydropped == false then
+			_G.notifydropped = true
+			script.Parent.Text = "Notify me when something was dropped [ON]"
+		else
+			_G.notifydropped = false
+			script.Parent.Text = "Notify me when something was dropped [OFF]"
+		end
+	end)
+	
+	game.Workspace.ChildAdded:Connect(function(item)
+		if _G.notifydropped then
+			if item:IsA("BackpackItem") then
+			game.StarterGui:SetCore("SendNotification",  {
+				Title = "Something was dropped!";
+				Text = item.Name;
+				Icon = "";
+				Duration = 6;
+				})
+			end
+		end
+	end)
+end
+coroutine.wrap(SGUC_fake_script)()
+local function FSFIPI_fake_script() -- notifywhenpickedup.LocalScript 
+	local script = Instance.new('LocalScript', notifywhenpickedup)
+
+	_G.notifypickedup = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if _G.notifypickedup == false then
+			_G.notifypickedup = true
+			script.Parent.Text = "Notify me when something picked up [ON]"
+		else
+			_G.notifypickedup = false
+			script.Parent.Text = "Notify me when something picked up [OFF]"
+		end
+	end)
+	
+	game.Workspace.ChildRemoved:Connect(function(item)
+		if _G.notifypickedup then
+			if item:IsA("BackpackItem") then
+			game.StarterGui:SetCore("SendNotification",  {
+				Title = "Something picked up!";
+				Text = item.Name;
+				Icon = "";
+				Duration = 6;
+				})
+			end
+		end
+	end)
+end
+coroutine.wrap(FSFIPI_fake_script)()
+local function BMPBFH_fake_script() -- notifywhenplrleaves.LocalScript 
+	local script = Instance.new('LocalScript', notifywhenplrleaves)
+
+	_G.notifyleaves = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if _G.notifyleaves == false then
+			_G.notifyleaves = true
+			script.Parent.Text = "Notify me when player leaves [ON]"
+		else
+			_G.notifyleaves = false
+			script.Parent.Text = "Notify me when player leaves [OFF]"
+		end
+	end)
+	
+	game.Players.PlayerRemoving:Connect(function(player)
+		if _G.notifyleaves then
+			
+			game.StarterGui:SetCore("SendNotification",  {
+				Title = "Someone left the game!";
+				Text = player.Name;
+				Icon = "";
+				Duration = 6;
+			})
+			
+		end
+	end)
+end
+coroutine.wrap(BMPBFH_fake_script)()
+local function QMSQZ_fake_script() -- notifywhenplrjoins.LocalScript 
+	local script = Instance.new('LocalScript', notifywhenplrjoins)
+
+	_G.notifyjoins = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if _G.notifyjoins == false then
+			_G.notifyjoins = true
+			script.Parent.Text = "Notify me when player joins [ON]"
+		else
+			_G.notifyjoins = false
+			script.Parent.Text = "Notify me when player joins [OFF]"
+		end
+	end)
+	
+	game.Players.PlayerAdded:Connect(function(player)
+		if _G.notifyjoins then
+			
+			game.StarterGui:SetCore("SendNotification",  {
+				Title = "Someone joined the game!";
+				Text = player.Name;
+				Icon = "";
+				Duration = 6;
+			})
+			
+		end
+	end)
+end
+coroutine.wrap(QMSQZ_fake_script)()
+local function ZBSLDQB_fake_script() -- cameogame2.LocalScript 
+	local script = Instance.new('LocalScript', cameogame2)
+
+	script.Parent.Draggable = true
+end
+coroutine.wrap(ZBSLDQB_fake_script)()
+local function PFIL_fake_script() -- open.LocalScript 
+	local script = Instance.new('LocalScript', open)
+
+	local TweenService = game:GetService("TweenService")
+	local frame = script.Parent.Parent.mainFrame
+	local frame2 = script.Parent.Parent
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		frame:TweenSize(
+			UDim2.new(0, 493,0, 312),
+			"Out",
+			"Linear",
+			2,
+			false
+		)
+		
+		script.Parent.Parent.mainFrame.Visible = true
+		
+		frame2:TweenSize(
+			UDim2.new(0, 493,0, 332),
+			"Out",
+			"Linear",
+			2,
+			false
+		)
+		
+		wait(2)
+		script.Parent.Visible = false
+		script.Parent.Parent.close.Visible = true
+		
+	end)
+	
+end
+coroutine.wrap(PFIL_fake_script)()
+local function GZWPP_fake_script() -- getuserinfo_2.LocalScript 
+	local script = Instance.new('LocalScript', getuserinfo_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for i,v in pairs(game.Players:GetPlayers())do
+			if script.Parent.Parent.playername.Text == v.Name then
+				script.Parent.Parent.name.Text = v.Name
+				script.Parent.Parent.userid.Text = v.UserId
+				script.Parent.Parent.accountage.Text = v.AccountAge
+			end
+		end
+	end)
+end
+coroutine.wrap(GZWPP_fake_script)()
+local function QTPZF_fake_script() -- userinfogui.LocalScript 
+	local script = Instance.new('LocalScript', userinfogui)
+
+	script.Parent.Draggable = true
+end
+coroutine.wrap(QTPZF_fake_script)()
+local function ZLXCQDP_fake_script() -- close_5.LocalScript 
+	local script = Instance.new('LocalScript', close_5)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(ZLXCQDP_fake_script)()
+
+game.StarterGui:SetCore("SendNotification",  {
+Title = "Thanks for using my GUI!";
+Text = "discord: CanEge#1319";
+Icon = "";
+Duration = 6;
+})
