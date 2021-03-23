@@ -1499,7 +1499,7 @@ local function DVRCMZD_fake_script() -- autom1.LocalScript
 			script.Parent.Text = "Auto M1 [ON]"
 		else
 			_G.autom1 = false
-			script.Parent.Text = "Auto M2 [OFF]"
+			script.Parent.Text = "Auto M1 [OFF]"
 		end	
 	end)
 	
