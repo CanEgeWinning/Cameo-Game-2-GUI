@@ -1653,29 +1653,29 @@ local function JCJGY_fake_script() -- followplayer.LocalScript
 			if input.KeyCode == Enum.KeyCode.T then -- You can change the keybind
 				if _G.typing == false then
 					if mouse.Target.Parent:FindFirstChild("Humanoid") then
-						for i,v in pairs(game.Players:GetPlayers())do
-							if mouse.Target.Parent.Name == v.Name and mouse.Target.Parent.Name ~= game.Players.LocalPlayer.Name then
-								if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - v.Character.HumanoidRootPart.Position).Magnitude <= 100 then
-									_G.target = v
-								end
-							end
-						end
-					else
-						_G.target = ""
-					end
-				end
-			end
-		end)
+                        if mouse.Target.Parent.Name ~= game.Players.LocalPlayer.Name then
+                            if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - mouse.Target.Parent:FindFirstChild("HumanoidRootPart").Position).Magnitude <= 100 then
+                                _G.target = mouse.Target.Parent.Name
+                            end
+                        end
+                    else
+                        _G.target = ""
+                    end
+                end
+            end
+        end)
 	
 		game:GetService("RunService").RenderStepped:Connect(function()
 			if _G.target ~= "" then
-				for i,v in pairs(game.Players:GetPlayers())do
-					if _G.target.Name == v.Name and _G.target.Name ~= game.Players.LocalPlayer.Name then
-						game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame * CFrame.new(0,5,0)
-					end
-				end
-			end
-		end)
+				for i,v in pairs(game.Workspace:GetChildren())do
+					if  _G.target ~= game.Players.LocalPlayer.Name then
+                        if v:IsA("Model") and v.Name == _G.target then
+                            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v:FindFirstChild("HumanoidRootPart").CFrame * CFrame.new(0,5,0)
+                        end
+                    end
+                end
+            end
+        end)
 	
 		UserInputService.TextBoxFocused:Connect(function(textbox)
 			if textbox.Name == "ChatBar" then
@@ -2289,6 +2289,13 @@ coroutine.wrap(ZLXCQDP_fake_script)()
 game.StarterGui:SetCore("SendNotification",  {
 Title = "Thanks for using my GUI!";
 Text = "discord: CanEge#1319";
+Icon = "";
+Duration = 6;
+})
+
+game.StarterGui:SetCore("SendNotification",  {
+Title = "UPDATE!";
+Text = "Fixed the follow player";
 Icon = "";
 Duration = 6;
 })
