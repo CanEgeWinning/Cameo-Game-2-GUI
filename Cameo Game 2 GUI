@@ -870,7 +870,7 @@ notifywhenillusionistjoins.BorderColor3 = Color3.fromRGB(45, 45, 45)
 notifywhenillusionistjoins.Position = UDim2.new(0.0486815572, 0, 0.975173354, 0)
 notifywhenillusionistjoins.Size = UDim2.new(0, 200, 0, 34)
 notifywhenillusionistjoins.Font = Enum.Font.SourceSans
-notifywhenillusionistjoins.Text = "Notify me when Illusionist joins the game [OFF]"
+notifywhenillusionistjoins.Text = "Notify me when someone selects the Illusionist Class [OFF]"
 notifywhenillusionistjoins.TextColor3 = Color3.fromRGB(255, 255, 255)
 notifywhenillusionistjoins.TextScaled = true
 notifywhenillusionistjoins.TextSize = 9.000
@@ -2211,73 +2211,279 @@ local function OUIIUP_fake_script() -- notifywhenobserve.LocalScript
 	
 	for i,v in pairs(game.Players:GetPlayers())do
 		v.Character.ChildAdded:Connect(function(item)
-			if _G.notifyobserve then
-				if item:IsA("Folder") and item.Name == "Observing" then
-					game.StarterGui:SetCore("SendNotification",  {
-						Title = "Observe Notifier";
-						Text = v.Name.." Is using Observe!";
-						Icon = "";
-						Duration = 6;
-					})
-				end
-			end
-		end)
-		
-		v.Character.ChildRemoved:Connect(function(item)
-			if _G.notifyobserve then
-				if item:IsA("Folder") and item.Name == "Observing" then
-					game.StarterGui:SetCore("SendNotification",  {
-						Title = "Observe Notifier";
-						Text = v.Name.." Is not using Observe right now!";
-						Icon = "";
-						Duration = 6;
-					})
-				end
-			end
-		end)
-	end
-end
-coroutine.wrap(OUIIUP_fake_script)()
-local function HBNY_fake_script() -- notifywhenillusionistjoins.LocalScript 
-	local script = Instance.new('LocalScript', notifywhenillusionistjoins)
-
-	_G.notifyillusionistjoins = false
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		if _G.notifyillusionistjoins == false then
-			_G.notifyillusionistjoins = true
-			script.Parent.Text = "Notify me when Illusionist joins the game [ON]"
-		else
-			_G.notifyillusionistjoins = false
-			script.Parent.Text = "Notify me when Illusionist joins the game [OFF]"
-		end
-		
-		for i,v in pairs(game.Players:GetPlayers())do
-	
-			local function checkIllusionist()
-				if _G.notifyillusionistjoins then
-					if v.Backpack:FindFirstChild("Observe") then
-						if _G.notifyillusionistjoins then
+			if v.Name ~= game.Players.LocalPlayer.Name then
+				if _G.notifyobserve then
+					if item:IsA("Folder") and item.Name == "Observing" then
+						if v.Character:FindFirstChild("Stats").Class.Value == "Illusionist" or v.Character:FindFirstChild("Stats").Class2.Value == "Illusionist" then
 							game.StarterGui:SetCore("SendNotification",  {
-								Title = "Illusionist Notifier";
-								Text = v.Name.." Is an Illusionist!";
+								Title = "Observe Notifier";
+								Text = v.Name.." Is using Observe! [Illusionist]";
+								Icon = "";
+								Duration = 6;
+							})
+						else
+							game.StarterGui:SetCore("SendNotification",  {
+								Title = "Observe Notifier";
+								Text = v.Name.." Is using Observe! [Memory Disc]";
 								Icon = "";
 								Duration = 6;
 							})
 						end
 					end
 				end
-	
-				v.CharacterAdded:Connect(function()
-					if _G.notifyillusionistjoins then
-						checkIllusionist()
+			end
+		end)
+		
+		v.Character.ChildRemoved:Connect(function(item)
+			if v.Name ~= game.Players.LocalPlayer.Name then
+				if _G.notifyobserve then
+					if item:IsA("Folder") and item.Name == "Observing" then
+						if v.Character:FindFirstChild("Stats").Class.Value == "Illusionist" or v.Character:FindFirstChild("Stats").Class2.Value == "Illusionist" then
+							game.StarterGui:SetCore("SendNotification",  {
+								Title = "Observe Notifier";
+								Text = v.Name.." Is not using Observe right now! [Illusionist]";
+								Icon = "";
+								Duration = 6;
+							})
+						else
+							game.StarterGui:SetCore("SendNotification",  {
+								Title = "Observe Notifier";
+								Text = v.Name.." Is not using Observe right now! [Memory Disc]";
+								Icon = "";
+								Duration = 6;
+							})
+						end
 					end
-				end)
+				end
+			end
+		end)
+	end
+
+	game.Players.PlayerAdded:Connect(function(player)
+		player.Character.ChildAdded:Connect(function(item)
+			if _G.notifyobserve then
+				if item:IsA("Folder") and item.Name == "Observing" then
+					if player.Character:FindFirstChild("Stats").Class.Value == "Illusionist" or player.Character:FindFirstChild("Stats").Class2.Value == "Illusionist" then
+						game.StarterGui:SetCore("SendNotification",  {
+							Title = "Observe Notifier";
+							Text = player.Name.." Is using Observe! [Illusionist]";
+							Icon = "";
+							Duration = 6;
+						})
+					else
+						game.StarterGui:SetCore("SendNotification",  {
+							Title = "Observe Notifier";
+							Text = player.Name.." Is using Observe! [Memory Disc]";
+							Icon = "";
+							Duration = 6;
+						})
+					end
+				end
+			end
+		end)
+
+		player.Character.ChildRemoved:Connect(function(item)
+			if _G.notifyobserve then
+				if item:IsA("Folder") and item.Name == "Observing" then
+					if player.Character:FindFirstChild("Stats").Class.Value == "Illusionist" or player.Character:FindFirstChild("Stats").Class2.Value == "Illusionist" then
+						game.StarterGui:SetCore("SendNotification",  {
+							Title = "Observe Notifier";
+							Text = player.Name.." Is not using Observe right now! [Illusionist]";
+							Icon = "";
+							Duration = 6;
+						})
+					else
+						game.StarterGui:SetCore("SendNotification",  {
+							Title = "Observe Notifier";
+							Text = player.Name.." Is not using Observe right now! [Memory Disc]";
+							Icon = "";
+							Duration = 6;
+						})
+					end
+				end
+			end
+		end)
+
+end)
+
+end
+
+coroutine.wrap(OUIIUP_fake_script)()
+local function HBNY_fake_script() -- notifywhenillusionistjoins.LocalScript 
+	local script = Instance.new('LocalScript', notifywhenillusionistjoins)
+
+	_G.notifyillusionistjoins = false
+	local illusionistlist = {}
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if _G.notifyillusionistjoins == false then
+			_G.notifyillusionistjoins = true
+			script.Parent.Text = "Notify me when someone selects the Illusionist Class [ON]"
+		else
+			_G.notifyillusionistjoins = false
+			script.Parent.Text = "Notify me when someone selects the Illusionist Class [OFF]"
+
+			for i,v in pairs(game.Players:GetPlayers())do
+				repeat wait() until v.Character:FindFirstChild("Stats")
+				if v.Name ~= game.players.LocalPlayer.Name then
+					if _G.notifyillusionistjoins then
+						if v.Character:FindFirstChild("Stats").Class.Value == "Illusionist" or v.Character:FindFirstChild("Stats").Class2.Value == "Illusionist" then
+							if not table.find(illusionistlist, v.Name) then
+								table.insert(illusionistlist, v.Name)
+								game.StarterGui:SetCore("SendNotification",  {
+									Title = "Illusionist Notifier";
+									Text = v.Name.." Is an Illusionist!";
+									Icon = "";
+									Duration = 6;
+								})
+							end
+						end
+					end
+				end
+
+				if table.find(illusionistlist, v.Name) then
+					repeat wait() until v.Character:FindFirstChild("Stats")
+					if _G.notifyillusionistjoins then
+						if v.Character:FindFirstChild("Stats").Class.Value ~= "Illusionist" then
+							for i2,v2 in pairs(illusionistlist)do
+								if v2 == v.Name then
+									table.remove(illusionistlist, i2)
+								end
+							end
+						end
+					end
+				end
+
+			end
+
+		end
+
+for i,v in pairs(game.Players:GetPlayers())do
+    if v.Name ~= game.Players.LocalPlayer.Name then
+		if _G.notifyillusionistjoins then
+			repeat wait() until v.Character:FindFirstChild("Stats")
+			if v.Character:FindFirstChild("Stats").Class.Value == "Illusionist" or v.Character:FindFirstChild("Stats").Class2.Value == "Illusionist" then
+				if not table.find(illusionistlist, v.Name) then
+					table.insert(illusionistlist, v.Name)
+					game.StarterGui:SetCore("SendNotification",  {
+						Title = "Illusionist Notifier";
+						Text = v.Name.." Is an Illusionist!";
+						Icon = "";
+						Duration = 6;
+					})
+				end
 			end
 		end
-		
+	end
+
+    v.CharacterAdded:Connect(function()
+        if v.Name ~= game.Players.LocalPlayer.Name then
+            repeat wait() until v.Character:FindFirstChild("Stats")
+			if _G.notifyillusionistjoins then
+				if v.Character:FindFirstChild("Stats").Class.Value ~= "Illusionist" or v.Character:FindFirstChild("Stats").Class2.Value ~= "Illusionist" then
+					if table.find(illusionistlist, v.Name) then
+						for i2,v2 in pairs(illusionistlist)do
+							if v2 == v.Name then
+								table.remove(illusionistlist, i2)
+								game.StarterGui:SetCore("SendNotification",  {
+									Title = "Illusionist Notifier";
+									Text = v.Name.." Is no longer Illusionist!";
+									Icon = "";
+									Duration = 6;
+								})
+							end
+						end
+					end
+				end
+			end
+		end
+
+        repeat wait() until v.Character:FindFirstChild("Stats")
+
+        if v.Character:FindFirstChild("Stats").Class.Value == "Illusionist" or v.Character:FindFirstChild("Stats").Class2.Value == "Illusionist" then
+			if _G.notifyillusionistjoins then
+				if v.Name ~= game.Players.LocalPlayer.Name then
+					if not table.find(illusionistlist, v.Name) then
+						table.insert(illusionistlist, v.Name)
+						game.StarterGui:SetCore("SendNotification",  {
+							Title = "Illusionist Notifier";
+							Text = v.Name.." Is selected the Illusionist Class!";
+							Icon = "";
+							Duration = 6;
+						})
+					end
+				end
+			end
+		end
+
+    end)
+
+end
+
+game.Players.PlayerAdded:Connect(function(player)
+    player.CharacterAdded:Connect(function()
+        repeat wait() until player.Character:FindFirstChild("Stats")
+		if _G.notifyillusionistjoins then
+			if player.Character:FindFirstChild("Stats").Class.Value == "Illusionist" then
+				if player.Name ~= game.Players.LocalPlayer.Name then
+					if not table.find(illusionistlist, player.Name) then
+						table.insert(illusionistlist, player.Name)
+						game.StarterGui:SetCore("SendNotification",  {
+							Title = "Illusionist Notifier";
+							Text = player.Name.." Is selected the Illusionist Class!";
+							Icon = "";
+							Duration = 6;
+						})
+					end
+				end
+			end
+		end
+
+        repeat wait() until player.Character:FindFirstChild("Stats")
+
+        if player.Character:FindFirstChild("Stats").Class.Value ~= "Illusionist" then
+			if _G.notifyillusionistjoins then
+				if player.Name ~= game.Players.LocalPlayer.Name then
+					if table.find(illusionistlist, player.Name) then
+						for i,v in pairs(illusionistlist)do
+							if v == player.Name then
+								table.remove(illusionistlist, i)
+								game.StarterGui:SetCore("SendNotification",  {
+									Title = "Illusionist Notifier";
+									Text = player.Name.." Is no longer Illusionist!";
+									Icon = "";
+									Duration = 6;
+								})
+							end
+						end
+					end
+				end
+			end
+		end
 	end)
-	
+end)
+
+game.Players.PlayerRemoving:Connect(function(player)
+    if table.find(illusionistlist, player.Name) then
+        for i,v in pairs(illusionistlist)do
+            if v == player.Name then
+                table.remove(illusionistlist, i)
+				if _G.notifyillusionistjoins then
+                game.StarterGui:SetCore("SendNotification",  {
+                    Title = "Illusionist Notifier";
+                    Text = player.Name.." left from the game!";
+                    Icon = "";
+                    Duration = 6;
+                })
+            end
+		end
+	end
+end
+end)
+
+
+	end)
+
 end
 coroutine.wrap(HBNY_fake_script)()
 local function UZYCC_fake_script() -- speedchanger.LocalScript 
@@ -2669,7 +2875,7 @@ game.StarterGui:SetCore("SendNotification",  {
 
 game.StarterGui:SetCore("SendNotification",  {
 	Title = "UPDATE!";
-	Text = "Added tp to Illusionist Trainer and Illusionist/Observe Notifier";
+	Text = "Fixed the Illusionist Notifier";
 	Icon = "";
 	Duration = 6;
 })
@@ -2677,6 +2883,14 @@ game.StarterGui:SetCore("SendNotification",  {
 game.StarterGui:SetCore("SendNotification",  {
 	Title = "UPDATE!";
 	Text = "Added WalkSpeed/JumpPower/ClimbSpeed Changer";
+	Icon = "";
+	Duration = 6;
+})
+
+game.StarterGui:SetCore("SendNotification",  {
+	Title = ":)";
+	Text = "Today is my birthday!";
+	Button1 = "Happy birthday CanEge!";
 	Icon = "";
 	Duration = 6;
 })
