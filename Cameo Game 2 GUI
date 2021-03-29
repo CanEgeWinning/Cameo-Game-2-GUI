@@ -2886,11 +2886,3 @@ game.StarterGui:SetCore("SendNotification",  {
 	Icon = "";
 	Duration = 6;
 })
-
-game.StarterGui:SetCore("SendNotification",  {
-	Title = ":)";
-	Text = "Today is my birthday!";
-	Button1 = "Happy birthday CanEge!";
-	Icon = "";
-	Duration = 6;
-})
