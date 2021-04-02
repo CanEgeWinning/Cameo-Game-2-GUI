@@ -2214,6 +2214,8 @@ coroutine.wrap(UHUTNOZ_fake_script)()
 local function PMNBGC_fake_script() -- notifywhenobserve.LocalScript 
 	local script = Instance.new('LocalScript', notifywhenobserve)
 
+    _G.notifyobserve = false
+
 	script.Parent.MouseButton1Click:Connect(function()
 		if _G.notifyobserve == false then
 			_G.notifyobserve = true
@@ -2919,14 +2921,14 @@ game.StarterGui:SetCore("SendNotification",  {
 
 game.StarterGui:SetCore("SendNotification",  {
 	Title = "UPDATE!";
-	Text = "Fixed the Illusionist Notifier";
+	Text = "Added No Cooldown";
 	Icon = "";
 	Duration = 6;
 })
 
 game.StarterGui:SetCore("SendNotification",  {
 	Title = "UPDATE!";
-	Text = "Added No Cooldown";
+	Text = "Fixed the Observe Notifier";
 	Icon = "";
 	Duration = 6;
 })
