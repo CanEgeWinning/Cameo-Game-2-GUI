@@ -1889,7 +1889,7 @@ local function QCMFR_fake_script() -- monktrainer.LocalScript
 	local script = Instance.new('LocalScript', monktrainer)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2992.98, 983.876, -4498.68)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2633.01, 857.738, -5444.32)
 	end)
 end
 coroutine.wrap(QCMFR_fake_script)()
@@ -1921,7 +1921,7 @@ local function BUDFTLO_fake_script() -- akumatrainer.LocalScript
 	local script = Instance.new('LocalScript', akumatrainer)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2229.55, 771.626, -3755.63)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2992.98, 983.876, -4498.68)
 	end)
 end
 coroutine.wrap(BUDFTLO_fake_script)()
@@ -2085,7 +2085,7 @@ local function WVHY_fake_script() -- facelesstrainer.LocalScript
 	local script = Instance.new('LocalScript', facelesstrainer)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3052.89, 1021.11, -5414.46)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1217.95, 1095.73, -4614.8)
 	end)
 end
 coroutine.wrap(WVHY_fake_script)()
@@ -2929,13 +2929,6 @@ game.StarterGui:SetCore("SendNotification",  {
 game.StarterGui:SetCore("SendNotification",  {
 	Title = "UPDATE!";
 	Text = "Fixed the teleport locations";
-	Icon = "";
-	Duration = 6;
-})
-
-game.StarterGui:SetCore("SendNotification",  {
-	Title = "UPDATE!";
-	Text = "Tools are improved (spectate, teleport and more thing)";
 	Icon = "";
 	Duration = 6;
 })
