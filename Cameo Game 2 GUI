@@ -2925,10 +2925,3 @@ game.StarterGui:SetCore("SendNotification",  {
 	Icon = "";
 	Duration = 6;
 })
-
-game.StarterGui:SetCore("SendNotification",  {
-	Title = "UPDATE!";
-	Text = "Fixed the teleport locations";
-	Icon = "";
-	Duration = 6;
-})
